@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Training Materials</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="center-header">AQUES Training</h1>
+
+        </p>
+        <!-- LESSON GRID: perfectly aligned two-column grid for both rows -->
+        <div class="menu lesson-grid">
+            <div class="menu-card span-2" data-header="main1">
+                <h2>Training Objective</h2>
+                <p>This training aims to equip participants with the knowledge and skills needed to effectively use the
+                    AQUES system, deliver structured lessons, and execute materials proficiently. Participants will be
+                    assessed on lesson flow, communication, and overall teaching performance.</p>
+            </div>
+            <div class="menu-card" data-header="main2">
+                <h2>Part 1: Rules</h2>
+                <p>This set of guidelines helps supporters maintain a professional and effective environment during
+                    AQUES lessons.</p>
+            </div>
+            <div class="menu-card" data-header="main3">
+                <h2>Part 2: Lesson Flow</h2>
+                <p>This guide shows how to conduct the mock demo, reflecting an actual AQUES lesson, aligning with
+                    student expectations, and demonstrating the structured flow of the lesson.</p>
+            </div>
+            <div class="menu-card" data-header="pronunciation">
+                <h2>Pronunciation</h2>
+                <p>This training helps Japanese learners practice pronunciation, the linking and dropping of sounds, and
+                    the natural rhythm of English to improve their speaking and listening skills.</p>
+            </div>
+            <div class="menu-card" data-header="translation">
+                <h2>Translation Exercise</h2>
+                <p>In this exercise, students learn English through set phrases and expressions. With continuous
+                    repetition, they build vocabulary, fluency, and conversational skills</p>
+            </div>
+            <!-- ACP Foundations, stretches full width -->
+            <div class="menu-card span-2" data-header="acp">
+                <h2>ACP Foundations</h2>
+                <p>This training is designed to help students describe pictures, learn new vocabulary, and improve their
+                    conversational skills.</p>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div id="modal" class="modal hidden">
+            <div class="modal-content">
+                <button class="modal-close" id="modalClose" aria-label="Close">&times;</button>
+                <h2 id="modalTitle"></h2>
+                <div id="modalSubtopics"></div>
+            </div>
+            <div class="modal-backdrop"></div>
+        </div>
+
+        <!-- Image Modal -->
+        <div id="img-modal"
+            style="display:none;position:fixed;z-index:9999;left:0;top:0;width:100vw;height:100vh;background:rgba(0,0,0,0.8);align-items:center;justify-content:center;">
+            <img id="img-modal-img" src="" alt="Enlarged">
+            <span id="img-modal-close"
+                style="position:absolute;top:24px;right:48px;color:#fff;font-size:2rem;cursor:pointer;">&times;</span>
+        </div>
+
+        <script src="main.js"></script>
+</body>
+
+</html>
