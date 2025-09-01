@@ -39,7 +39,7 @@ body {
 .center-header {
   text-align: center;
   margin-top: 0;
-  color: #2e7dff;
+  color: #2563eb;
   letter-spacing: 1px;
 }
 .center-intro {
@@ -87,7 +87,7 @@ body {
 }
 .menu-card h2 {
   margin-top: 0;
-  color: #2e7dff;
+  color: #2563eb;
 }
 .menu-card p {
   margin-bottom: 0;
@@ -174,7 +174,7 @@ body {
 }
 .subtopic-btn.active {
   background: #eaf2ff;
-  color: #2e7dff;
+  color: #2563eb;
   box-shadow: 0 2px 10px #2e7dff18;
 }
 .subtopic-panel {
