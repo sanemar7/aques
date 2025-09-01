@@ -200,6 +200,18 @@ If a problem occurs during the lesson or before it starts, please contact the ch
   <b>SAY:</b> "Let me share to you my screen. Can you see it now?"<br>
   <br><br> `,
 
+    `<br><div>
+     <div><strong class="bold">Introduction, Technical check, Share the screen</div>
+    </strong><br><br>
+     <iframe 
+    src="https://drive.google.com/file/d/17IyZ2mjIlPCR5zyswjF25FnuA0SCGUgB/preview" 
+    width="100%" 
+    height="400" 
+    allowfullscreen
+    allow="autoplay">
+  </iframe><br><br><br>
+   </div>`,
+
    `<br><div>
      <div><strong class="bold">How to share screen using MS Teams App </div>
     </strong><br><br>
@@ -373,7 +385,9 @@ https://docs.google.com/forms/d/e/1FAIpQLScsAiiTV_bdBIEcy7bwd0GZ45-0Kw2tiuiGemmw
         title: "Grammar Rules",
         type: "slideshow",
         slides: [
-          `<br><span class="bold">1. Address one mistake at a time. Give three attempts per mistake.<br><br>
+          `<span class="hinttitle">• These aren’t traditional English grammar rules. <br>• These are AQUES guidelines for handling student errors in sentence translations.</span></b><br><br>
+          
+          <br><span class="bold">1. Address one mistake at a time. Give three attempts per mistake.<br><br>
           2. Consider the student's first translation the first attempt.<br><br>
           3. Give hints after every incorrect attempt.<br><br>
           <b>NOTE:</b><br><br>
@@ -441,7 +455,7 @@ https://docs.google.com/forms/d/e/1FAIpQLScsAiiTV_bdBIEcy7bwd0GZ45-0Kw2tiuiGemmw
       title: "Missing 2-letter words",
       slides: [
   `<br><div>
-     <div><br><strong class="bold">Give the number of letters + grammar term</strong></div><br><br>
+     <div><br><strong class="bold">2-letter word + grammar term</strong></div><br><br>
      <iframe 
     src="https://drive.google.com/file/d/1MD_dlRSkHAcL6mUTOXuxriwmtMju70I1/preview" 
     width="100%" 
@@ -452,7 +466,7 @@ https://docs.google.com/forms/d/e/1FAIpQLScsAiiTV_bdBIEcy7bwd0GZ45-0Kw2tiuiGemmw
    </div>`,
   `<br><div>
      <div><br><strong class="bold">Give Choices</strong></div><br>
-     <div class="bold">• All three choices are two-letter words.<br><br></div>
+     <div class="bold">• All three choices are two-letter words.<br><br>• We <em><mark>ONLY</mark></em> give choices for two-letter words.<br><br></div>
      <iframe 
     src="https://drive.google.com/file/d/1bJeBfdaoNGLyKWBHqdljkkcfjXBTU1x2/preview" 
     width="100%" 
@@ -463,7 +477,7 @@ https://docs.google.com/forms/d/e/1FAIpQLScsAiiTV_bdBIEcy7bwd0GZ45-0Kw2tiuiGemmw
    </div>`,
   `<br><div>
      <div><br><strong class="bold">Give Choices</strong></div><br>
-     <div class="bold">• If the student’s first answer is wrong, give the remaining two choices.<br><br></div>
+     <div class="bold">• If the student’s first answer is wrong, give the remaining two choices.<br><br>• If the student still selects the wrong answer from the remaining two choices, reveal the correct option.<br><br></div>
      <iframe 
     src="https://drive.google.com/file/d/1Hfi0Dv437HMVF23fpPEfP2_tBlq_jQGb/preview" 
     width="100%" 
@@ -472,10 +486,7 @@ https://docs.google.com/forms/d/e/1FAIpQLScsAiiTV_bdBIEcy7bwd0GZ45-0Kw2tiuiGemmw
     allow="autoplay">
   </iframe><br><br><br>
    </div>`,
-   `<br><div>
-     <div><br><strong class="bold">Give Choices</strong></div><br>
-     <div class="bold">• If the student still selects the wrong answer from the remaining two choices, reveal the correct option.<br><br></div>
-   </div>`,
+
     `<br><div>
      <div><br><strong class="bold">Give Choices</strong></div><br>
      <div class="bold">• You can also give choices for Articles (a, an, the)<br><br></div>
@@ -487,6 +498,7 @@ https://docs.google.com/forms/d/e/1FAIpQLScsAiiTV_bdBIEcy7bwd0GZ45-0Kw2tiuiGemmw
     allow="autoplay">
   </iframe><br><br><br>
    </div>`,
+
    `<br><p class="hint"><span class="hinttitle">Note: Give three Choices.</span><br><br><span class="bold">answer key: I'll go to
                     the airport in the evening.<br>student: I'll go to the airport <em><mark>by</mark></em> the
                         evening.</span><br><br><br><span class="hinttitle">HINT: ???</span><br><br><br> `,
@@ -505,7 +517,7 @@ https://docs.google.com/forms/d/e/1FAIpQLScsAiiTV_bdBIEcy7bwd0GZ45-0Kw2tiuiGemmw
     allow="autoplay">
   </iframe><br><br><br>
    </div>`,
-   `<br><p class="hint"><span class="hinttitle">Note: Give three Choices.</span><br><br><span class="bold">answer key: I’m learning English.<br>student: I <em><mark>will</mark></em> learning English.</span><br><br><br><span class="hinttitle">HINT: ???</span><br><br><br> `,
+   `<br><p class="hint"><span class="hinttitle">Note: Give a proper hint.</span><br><br><span class="bold">answer key: I’m learning English.<br>student: I <em><mark>will</mark></em> learning English.</span><br><br><br><span class="hinttitle">HINT: ???</span><br><br><br> `,
       ]
     },
     {
@@ -570,7 +582,7 @@ https://docs.google.com/forms/d/e/1FAIpQLScsAiiTV_bdBIEcy7bwd0GZ45-0Kw2tiuiGemmw
       ]
     },
     {
-      title: "Remove a word or a letter",
+      title: "Remove / Add ",
       slides: [`<br><div><br><strong class="bold">Tell the student which WORD to remove, but not what to add.</strong></div><br><br>
      <iframe 
     src="https://drive.google.com/file/d/1aPvKaOJnIPUVlP0zKzVEzOLyfN1BtjQf/preview" 
@@ -580,6 +592,7 @@ https://docs.google.com/forms/d/e/1FAIpQLScsAiiTV_bdBIEcy7bwd0GZ45-0Kw2tiuiGemmw
     allow="autoplay">
   </iframe><br><br><br>
    </div>`,
+
    `<br><div>
      <div><br><strong class="bold">Tell the student which LETTER to remove, but not what to add.</strong></div><br><br>
      <iframe 
@@ -590,8 +603,28 @@ https://docs.google.com/forms/d/e/1FAIpQLScsAiiTV_bdBIEcy7bwd0GZ45-0Kw2tiuiGemmw
     allow="autoplay">
   </iframe><br><br><br>
    </div>`,
-   `<br><p class="hint"><span class="hinttitle">Note: Remove a word. </span><br><br><span class="bold">answer key: You can park here.<br>student: You can park <em><mark>car</mark?></em> here.</span><br><br><br><span class="hinttitle">HINT: ???</span><br><br><br> `,
-   `<br><p class="hint"><span class="hinttitle">Note: Remove a letter. </span><br><br><span class="bold">answer key: He takes a taxi every night.<br>student: He takes a taxi every <em><mark>nights</mark?></em>.</span><br><br><br><span class="hinttitle">HINT: ???</span><br><br><br> `,
+
+   `<br><div>
+     <div><br><strong class="bold">Tell the student how many letters to add, but don’t say what the missing letters are.</strong><br><br> 
+     
+     <span class="bold">answer key: I'm not interested in history.<br>student: I'm not <em><mark>interest</mark?></em> in history.</span><br><br><br><span class="bold"><b>HINT: </b>Almost there! Please <b>add two more letters</b> to the word Interest.<span><br><br><br> 
+
+   </div>`,
+
+    `<br><div>
+     <div><br><strong class="bold">Tell the student how many letters to add, but don’t say what the missing letters are.</strong><br><br> 
+     
+     <span class="bold">answer key: We're going to a hot spring.<br>student: We're <em><mark>go</mark?></em> to a hot spring.</span><br><br><br><span class="bold"><b>HINT: </b>Almost there! Please <b>add three more letters</b> to the word Go.<span><br><br><br> 
+
+   </div>`,
+
+   `<br><p class="hint"><span class="hinttitle">Note: Remove / Add </span><br><br><span class="bold">answer key: You can park here.<br>student: You can park <em><mark>car</mark?></em> here.</span><br><br><br><span class="hinttitle">HINT: ???</span><br><br><br> `,
+
+   `<br><p class="hint"><span class="hinttitle">Note: Remove / Add </span><br><br><span class="bold">answer key: He takes a taxi every night.<br>student: He takes a taxi every <em><mark>nights</mark?></em>.</span><br><br><br><span class="hinttitle">HINT: ???</span><br><br><br> `,
+
+   `<br><p class="hint"><span class="hinttitle">Note: Remove / Add </span><br><br><span class="bold">answer key: I'm excited about my new job.<br>student: I'm <em><mark>exciting</mark?></em> about my new job.</span><br><br><br><span class="hinttitle">HINT: ???</span><br><br><br> `,
+
+   `<br><p class="hint"><span class="hinttitle">Note: Remove / Add </span><br><br><span class="bold">answer key: She has an older brother.<br>student: She has an  <em><mark>old</mark?></em> brother.</span><br><br><br><span class="hinttitle">HINT: ???</span><br><br><br> `,
       ]
     },
     {
