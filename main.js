@@ -266,7 +266,17 @@ https://docs.google.com/forms/d/e/1FAIpQLScsAiiTV_bdBIEcy7bwd0GZ45-0Kw2tiuiGemmw
   📷 Click image to view
 </button><br><br><br>`,
       ]
-    }
+    },
+    {
+        title: "Lesson Breakdown",
+        type: "slideshow",
+      slides: [
+        `<br><span class="hinttitle">Mock Demo Lesson Breakdown</span><br><br>
+	<span class="bold">• <b>3:00 PM:</b> Call the student, Do a technical check, Introduction, Share the screen in less than a minute, then Start Pronunciation.<br><br>
+   • <b>3:15 PM:</b> end ACP and start with the Wrap-up<br><br>• <b>3:16:</b> end the call 
+<br><br><br>`,
+      ]
+    },
   ]
 },
   pronunciation: {
