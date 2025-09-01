@@ -254,7 +254,13 @@ If a problem occurs during the lesson or before it starts, please contact the ch
       slides: [
         `<br><div>
      <div><strong class="bold">1. Send a simple message together with the feedback link to the Skype group. </strong></div><br>
-     <span class="bold"><b>Example:</b> The lesson has finished. Thank you for today! If you have time, kindly answer the performance feedback link. </span><br><br><br>
+     <span class="bold"><b>Example:</b> The lesson has finished. Thank you for today! If you have time, kindly answer the performance feedback link. <br><br>
+     
+    <b>Feedback Link:</b>
+
+https://docs.google.com/forms/d/e/1FAIpQLScsAiiTV_bdBIEcy7bwd0GZ45-0Kw2tiuiGemmwn-c_NE8xxw/viewform
+
+</span><br><br><br>
      <button class="enlargeable-img-btn"
   data-img-src="https://res.cloudinary.com/dvlwxkj7y/image/upload/v1756610840/lastmessage_uzng8p.png">
   📷 Click image to view
@@ -305,7 +311,7 @@ If a problem occurs during the lesson or before it starts, please contact the ch
           },
           {
             title: "Dropping Sounds",
-            url: "https://drive.google.com/file/d/1pw_cyerOk2Ko_JEtHw5HGo4TjiFt340kpreview"
+            url: "https://drive.google.com/file/d/1pw_cyerOk2Ko_JEtHw5HGo4TjiFt340k/preview"
           },
           {
             title: "Sound Changes",
@@ -360,8 +366,9 @@ If a problem occurs during the lesson or before it starts, please contact the ch
           `<br><span class="bold">1. Address one mistake at a time. Give three attempts per mistake.<br><br>
           2. Consider the student's first translation the first attempt.<br><br>
           3. Give hints after every incorrect attempt.<br><br>
-          4. After the third attempt, provide the answer or the missing word.<br><br>
-          5. Encourage 1 to 2 sentence repetition after the correct translation.</span><br><br><br>`,
+          <b>NOTE:</b><br><br>
+          • After the third attempt, provide the answer or the missing word.<br><br>
+          • Encourage 1 to 2 sentence repetition after the correct translation.</span><br><br><br>`,
         ]
       },
       {
@@ -534,7 +541,7 @@ If a problem occurs during the lesson or before it starts, please contact the ch
                 first letter + number of letters. </span><br><br><span class="bold">answer key: We take lessons every day?<br>student: We <em><mark>make</mark?></em>
                     lessons every day.</span><br><br><br><span class="hinttitle">HINT: ???</span><br><br><br> `,
    `<br><p class="hint"><span class="hinttitle">Note: Give the
-                first letter + number of letters. </span><br><br><span class="bold">answer key: We take lessons every day?<br>student: We take <em><mark>___</mark?></em> every day.</span><br><br><br><span class="hinttitle">HINT: ???</span><br><br><br> `,
+                first and last letters + number of letters. </span><br><br><span class="bold">answer key: We take lessons every day?<br>student: We take <em><mark>___</mark?></em> every day.</span><br><br><br><span class="hinttitle">HINT: ???</span><br><br><br> `,
       ]
     },
     {
@@ -556,7 +563,7 @@ If a problem occurs during the lesson or before it starts, please contact the ch
       title: "Remove a word or a letter",
       slides: [`<br><div><br><strong class="bold">Tell the student which WORD to remove, but not what to add.</strong></div><br><br>
      <iframe 
-    src="https://drive.google.com/file/d/1pwqcC-Q3hA-9h_GjpwqhHogGUs979U_7/preview" 
+    src="https://drive.google.com/file/d/1aPvKaOJnIPUVlP0zKzVEzOLyfN1BtjQf/preview" 
     width="100%" 
     height="400" 
     allowfullscreen
@@ -598,9 +605,9 @@ If a problem occurs during the lesson or before it starts, please contact the ch
     allow="autoplay">
   </iframe><br><br><br>
    </div>`,
-   `<br><p class="hint"><span class="hinttitle">Note: Change the word to its Present tense. </span><br><br><span class="bold">answer key: I want new glasses.<br>student: I <em><mark>wantee</mark?></em> new glasses.</span><br><br><br><span class="hinttitle">HINT: ???</span><br><br><br> `,
-   `<br><p class="hint"><span class="hinttitle">Note: Note: Change the word to its PAST tense. </span><br><br><span class="bold">answer key: We tried Indian food for the first time.<br>student: We <em><mark>try</mark?></em> Indian food for the first time.</span><br><br><br><span class="hinttitle">HINT: ???</span><br><br><br> `,
-   `<br><p class="hint"><span class="hinttitle">Note: Change the sentence to its FUTURE tense. </span><br><br><span class="bold">answer key: I'll go to the amusement park tonight.<br>student: <em><mark>I</mark?></em> go to the amusement park tonight.</span><br><br><br><span class="hinttitle">HINT: ???</span><br><br><br> `
+   `<br><p class="hint"><span class="hinttitle">Note: Change the word to its Correct tense. </span><br><br><span class="bold">answer key: I want new glasses.<br>student: I <em><mark>wanted</mark?></em> new glasses.</span><br><br><br><span class="hinttitle">HINT: ???</span><br><br><br> `,
+   `<br><p class="hint"><span class="hinttitle">Note: Note: Change the word to its Correct tense. </span><br><br><span class="bold">answer key: We tried Indian food for the first time.<br>student: We <em><mark>try</mark?></em> Indian food for the first time.</span><br><br><br><span class="hinttitle">HINT: ???</span><br><br><br> `,
+   `<br><p class="hint"><span class="hinttitle">Note: Change the sentence to its Correct tense. </span><br><br><span class="bold">answer key: I'll go to the amusement park tonight.<br>student: <em><mark>I</mark?></em> go to the amusement park tonight.</span><br><br><br><span class="hinttitle">HINT: ???</span><br><br><br> `
       ]
     },
     {
@@ -615,7 +622,7 @@ If a problem occurs during the lesson or before it starts, please contact the ch
   </iframe><br><br><br>
    </div>`,
    `<br><p class="hint"><span class="hinttitle">Note: Change the word to its correct form. </span><br><br><span class="bold">answer key: Are they on their bicycles?<br>student: Are they on their <em><mark>bicycle</mark?></em></span><br><br><br><span class="hinttitle">HINT: ???</span><br><br><br> `,
-   `<br><p class="hint"><span class="hinttitle">Note: Change the word to its correct form.. </span><br><br><span class="bold">answer key: I made a few mistakes in the report.<br>student: I made a few <em><mark>mistake</mark?> in the report.</span><br><br><br><span class="hinttitle">HINT: ???</span><br><br><br> `,
+   `<br><p class="hint"><span class="hinttitle">Note: Change the word to its correct form.. </span><br><br><span class="bold">answer key: I made a few mistakes in the report.<br>student: I made a few <em><mark>mistake</mark?></em> in the report.</span><br><br><br><span class="hinttitle">HINT: ???</span><br><br><br> `,
    `<br><p class="hint"><span class="hinttitle">Note: Change the word to its correct form. </span><br><br><span class="bold">answer key: He never eats meat.<br>student: He never <em><mark>eat</mark> meat. </span><br><br><br><span class="hinttitle">HINT: ???</span><br><br><br>`
       ]
     },
@@ -636,7 +643,7 @@ If a problem occurs during the lesson or before it starts, please contact the ch
     },
     {
       title: "Opposite, Synonym, & Negative form",
-      slides: [`<br><div><br><strong class="bold">You may ask the student to change a word to its oppostite or synonymous word.</strong></div><br><br>
+      slides: [`<br><div><br><strong class="bold">Ask the student to change a word to its oppostite or synonymous word.</strong></div><br><br>
         <span class="bold">answer key: I don't have good ideas.<br>student: I don't have <em><mark>bad</mark><em> ideas.</span><br><br>
         <span class="hinttitle">HINT: Very close! Please change "bad" to its opposite.</span><br><br><br>
    </div>`,
@@ -654,8 +661,44 @@ If a problem occurs during the lesson or before it starts, please contact the ch
         title: "New, Review, and Shuffle pages",
         type: "presentation",
         description: "<span style='font-size:1.3em; font-weight:bold;'>View the presentation.</span>",
-        link: "https://docs.google.com/spreadsheets/d/1fIkoMsrDsUFZCAaBJJgOKzUv0ICGaPwue-ReuJiOPFI/edit?gid=1560803091#gid=1560803091"
+        link: "https://docs.google.com/spreadsheets/d/1fIkoMsrDsUFZCAaBJJgOKzUv0ICGaPwue-ReuJiOPFI/edit?gid=1560803091#gid=1560803091",
       },
+      {
+    title: "Pages' Sample Videos",
+    type: "slideshow",
+    slides: [
+      `<br><div><strong class="bold">NEW page</strong></div><br><br>
+     <iframe 
+    src="https://drive.google.com/file/d/1Vee4Kx1rXSYbqwhebVZ56Qtrs3Mj4HRQ/preview" 
+    width="100%" 
+    height="400" 
+    allowfullscreen
+    allow="autoplay">
+  </iframe><br><br><br>
+   </div>`,
+   
+   `<br><div><strong class="bold">REVIEW page</strong></div><br><br>
+     <iframe 
+    src="https://drive.google.com/file/d/13EzsOgV-tNCwovtqWz__w-wErD43RwtM/preview" 
+    width="100%" 
+    height="400" 
+    allowfullscreen
+    allow="autoplay">
+  </iframe><br><br><br>
+   </div>`,
+
+   `<br><div><strong class="bold">SHUFFLE page</strong></div><br><br>
+     <iframe 
+    src="https://drive.google.com/file/d/1Oinve8ZHaJhPSBRg-uGeXmeFEl0F9K1d/preview" 
+    width="100%" 
+    height="400" 
+    allowfullscreen
+    allow="autoplay">
+  </iframe><br><br><br>
+   </div>`,
+    ]
+  },
+      
     ]
   },
   acp: {
