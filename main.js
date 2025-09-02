@@ -634,7 +634,7 @@ https://docs.google.com/forms/d/e/1FAIpQLScsAiiTV_bdBIEcy7bwd0GZ45-0Kw2tiuiGemmw
     src="https://drive.google.com/file/d/1fVLbRA3u0MaHPrrvrkjU-IQKC9uOHFVk/preview" 
     width="100%" 
     height="400" 
-    aallowfullscreen
+    allowfullscreen
     allow="autoplay">
   </iframe><br><br><br>
    </div>`,
@@ -666,7 +666,7 @@ https://docs.google.com/forms/d/e/1FAIpQLScsAiiTV_bdBIEcy7bwd0GZ45-0Kw2tiuiGemmw
    </div>`,
    `<br><p class="hint"><span class="hinttitle">Note: Change the word to its correct form. </span><br><br><span class="bold">answer key: Are they on their bicycles?<br>student: Are they on their <em><mark>bicycle</mark?></em></span><br><br><br><span class="hinttitle">HINT: ???</span><br><br><br> `,
    `<br><p class="hint"><span class="hinttitle">Note: Change the word to its correct form.. </span><br><br><span class="bold">answer key: I made a few mistakes in the report.<br>student: I made a few <em><mark>mistake</mark?></em> in the report.</span><br><br><br><span class="hinttitle">HINT: ???</span><br><br><br> `,
-   `<br><p class="hint"><span class="hinttitle">Note: Change the word to its correct form. </span><br><br><span class="bold">answer key: He never eats meat.<br>student: He never <em><mark>eat</mark> meat. </span><br><br><br><span class="hinttitle">HINT: ???</span><br><br><br>`
+   `<br><p class="hint"><span class="hinttitle">Note: Change the word to its correct form. </span><br><br><span class="bold">answer key: He never eats meat.<br>student: He never <em><mark>eat</mark></em> meat. </span><br><br><br><span class="hinttitle">HINT: ???</span><br><br><br>`
       ]
     },
     {
@@ -690,7 +690,7 @@ https://docs.google.com/forms/d/e/1FAIpQLScsAiiTV_bdBIEcy7bwd0GZ45-0Kw2tiuiGemmw
         <span class="bold">answer key: I don't have good ideas.<br>student: I don't have <em><mark>bad</mark><em> ideas.</span><br><br>
         <span class="hinttitle">HINT: Very close! Please change "bad" to its opposite.</span><br><br><br>
    </div>`,
-   `<br><div><br><strong class="bold">You may ask the student to change a word to its neagtive form if the missing word is "NOT".</strong></div><br><br>
+   `<br><div><br><strong class="bold">You may ask the student to change a word to its negative form if the missing word is "NOT".</strong></div><br><br>
         <span class="bold">answer key: I don't have enough time for sleep.<br>student: I <em><mark>do </mark><em> have enough time for/to sleep..</span><br><br>
         <span class="hinttitle">HINT: Very close! Please change "do" to its negative form.</span><br><br><br>
    </div>`,
