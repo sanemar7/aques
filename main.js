@@ -51,7 +51,7 @@ const DATA = {
         type: "slideshow",
         slides: [`<br><span class="hinttitle">5-minute Rule</span><br><br>
 	<span class="bold">• If a supporter has technical issues or delays, the supporter <em><mark>must contact the support team immediately.</mark></em><br><br>
-  • The supporter has 5 minutes to resolve the issue with support team's help. Otherwise, another supporter will take over.</mark></em><br><br><br>`,
+  • The supporter has 5 minutes to resolve the issue with support team's help. Otherwise, another supporter will take over.<br><br><br>`,
   `<br><span class="hinttitle">SUPPORTER IS LATE | HAS DELAYS OR DISRUPTIONS </span><br><br>
 	<span class="bold">• If you’re late or encounter issues during the lesson, you must offer and ask the student about a possible extension.<br><br>
   • Extensions are allowed <em><mark>ONLY</mark></em> if the delay is on your end and the student agrees.<br><br><br>`,
@@ -163,7 +163,7 @@ If a problem occurs during the lesson or before it starts, please contact the ch
    </div>`,
 
    `<br><div>
-     <div><strong class="bold">3. At the scheduled lesson time, please send the message <em><mark>"Calling now"</mark><em> before starting the call.</strong></div><br>
+     <div><strong class="bold">3. At the scheduled lesson time, please send the message <em><mark>"Calling now"</mark></em> before starting the call.</strong></div><br>
     
      <br>
   <button class="enlargeable-img-btn"
@@ -297,7 +297,7 @@ https://docs.google.com/forms/d/e/1FAIpQLScsAiiTV_bdBIEcy7bwd0GZ45-0Kw2tiuiGemmw
       {
         title: "Pronunciation Rule",
         type: "video",
-        text: "<span style='font-size:1.3em; font-weight:bold;'>If the student mispronounces a word, <em><mark>have them listen and repeat it 2–4 times</mark><em>.</span>",
+        text: "<span style='font-size:1.3em; font-weight:bold;'>If the student mispronounces a word, <em><mark>have them listen and repeat it 2–4 times</mark></em>.</span>",
         videoUrl: "https://drive.google.com/file/d/131pmCK-GpjnOIktf2QRa43ZmnJP82hMU/preview"
       },
       {
@@ -312,7 +312,7 @@ https://docs.google.com/forms/d/e/1FAIpQLScsAiiTV_bdBIEcy7bwd0GZ45-0Kw2tiuiGemmw
         description: "<span style='font-size:1.3em; font-weight:bold;'>Select a video below to watch.</span>",
         videos: [
           {
-            title: "Japanese Instuctions",
+            title: "Japanese Instructions",
             url: "https://drive.google.com/file/d/1uskMAJLJ-jbNJ13T0TD5mhnM4vv5qFXT/preview"
           },
           {
@@ -362,7 +362,7 @@ https://docs.google.com/forms/d/e/1FAIpQLScsAiiTV_bdBIEcy7bwd0GZ45-0Kw2tiuiGemmw
         title: "Translation Rules",
         type: "slideshow",
         slides: [
-          `<span class="hinttitle"><b>1. Pronunciation Rules:</span></b><br><br><span class="bold">• If the student mispronounces a word, <em><mark>have them repeat it 2–4 times.</span></mark></em><br><br>
+          `<span class="hinttitle"><b>1. Pronunciation Rules:</span></b><br><br><span class="bold">• If the student mispronounces a word, <em><mark><b>have them repeat it 2–4 times.</b></mark></em></span><br><br>
     <span class="bold"><b>Example:</b><br><br>
     Answer key: I like to eat salad. <br>
     Student: I like to eat <b>salaDA.</b><br><br>
@@ -770,7 +770,7 @@ https://docs.google.com/forms/d/e/1FAIpQLScsAiiTV_bdBIEcy7bwd0GZ45-0Kw2tiuiGemmw
         type: "slideshow",
       slides: [
         `<br><div><strong class="bold">Key Guidelines for ACP</div><br></strong>
-     <span class="bold">• Do not call it “Free Talk. </span><br><br>
+     <span class="bold">• Do not call it “Free Talk." </span><br><br>
      <span class="bold">• Use simple English and adjust questions to the student’s level. </span><br><br>
      <span class="bold">• Be flexible. Rephrase or simplify instead of forcing understanding. </span><br><br>
      <span class="bold">• Maintain a speaking ratio of 80% Student | 20% Supporter. </span><br><br>
@@ -810,7 +810,131 @@ https://docs.google.com/forms/d/e/1FAIpQLScsAiiTV_bdBIEcy7bwd0GZ45-0Kw2tiuiGemmw
   ]
 }
     ]
-  }
+  },
+
+ mockdemo: {
+    title: "Mock Demo Videos",
+    subtopics: [
+      {
+        title: "Mock Demo Videos",
+        type: "slideshow",
+        slides: [
+          `<br><br><iframe src="https://drive.google.com/file/d/1ntafzUd3ECL0BIRrmPXtGAiB2DNhOLVY/preview" width="100%" height="400" allowfullscreen allow="autoplay"></iframe><br><br>
+          <div style="margin-top:8px;font-weight:bold;">Mock Demo Sample 1</div><br><br>`,
+
+          `<br><br><iframe src="https://drive.google.com/file/d/1VxHGTeUQOJercyco34aLqfzJe5jrFDm1/preview" width="100%" height="400" allowfullscreen allow="autoplay"></iframe><br><br>
+          <div style="margin-top:8px;font-weight:bold;">Mock Demo Sample 2</div><br><br>`,
+
+           `<br><br><iframe src="https://drive.google.com/file/d/16wRbWDQNnWntDkuB3Sy-GnNbyzbinsEb/preview" width="100%" height="400" allowfullscreen allow="autoplay"></iframe><br><br>
+          <div style="margin-top:8px;font-weight:bold;">Mock Demo Sample 3</div><br><br>`,
+
+          `<br><br><iframe src="https://drive.google.com/file/d/1GpnsoUP4aDkkIHt9-mAqD1mq1GWSVgCx/preview" width="100%" height="400" allowfullscreen allow="autoplay"></iframe><br><br>
+          <div style="margin-top:8px;font-weight:bold;">Mock Demo Sample 4</div><br><br>`,
+        ]
+      }
+    ]
+  },
+  quizfaq: {
+  title: "Quiz, Feedback, FAQs",
+  subtopics: [
+    {
+      title: "Training Quiz",
+      type: "presentation",
+      description: "<span style='font-size:1.2em;font-weight:bold;'>Test your knowledge with the training quiz form.</span>",
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSeNK43Yz1vomlkGBXPXBNi8xh9Qo3dpuu-5ohBCIYhquqBLXA/viewform"   
+    },
+    {
+      title: "Training Feedback",
+      type: "presentation",
+      description: "<span style='font-size:1.2em;font-weight:bold;'>Submit your feedback for this training using the form below.</span>",
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSdkS_r06PvJTV1W78kwPEuhYqGZCpmykX_g0s6yT257yBK52A/viewform",
+    },
+    {
+  title: "Frequently Asked Questions (FAQs)",
+  type: "video-group",
+  description: "<span style='font-size:1.2em;font-weight:bold;'>Click a topic to view the full Q&A.</span>",
+  videos: [
+    {
+      title: "Training",
+      slides: [
+        {
+          question: "How many hours does the training usually last?",
+          answer: "The session typically lasts three and a half hours."
+        },
+        {
+          question: "Are training materials provided, or do we create our own lesson plans?",
+          answer: "Training materials are already provided. Therefore, you do not need to create lesson plans."
+        },
+      ]
+    },
+    {
+      title: "AQUES",
+      slides: [
+        {
+          question: "What does AQUES aim to achieve?",
+      answer: "AQUES aims to provide high-quality English lessons in a supportive environment, helping students achieve their goals and transform their lives through language."
+        },
+        {
+          question: "How is the AQUES course designed?",
+      answer: "The course is designed for Japanese students to improve their English conversation skills on an almost daily basis. Students can take lessons almost anytime, anywhere.<br><br>Learning a new language alone can be challenging, so the course provides a supportive environment with guidance from supporters in Japan and the Philippines. "
+        },
+        {
+          question: "How are AQUES lessons conducted?",
+      answer: "Lessons are one-on-one, giving students ample time to practice speaking. <br><br>We believe that this dedicated time and support make a real difference in their results."
+        },
+        {
+          question: "How is the AQUES curriculum designed?",
+      answer: "The AQUES curriculum includes Pronunciation Practice, Translation Exercises, and ACP Foundation. <br><br>It is carefully designed by our curriculum team in Japan, with a focus on usable expressions and language presented in a way that helps students continue their lessons smoothly."
+        },
+        {
+          question: "What are the levels of the AQUES curriculum?",
+      answer: "The curriculum has three levels: Lower Intermediate, Intermediate, and Higher Intermediate."
+        },
+        {
+          question: "How does AQUES determine the starting level for each student?",
+      answer: "Coaches in Japan determine the optimal starting level for each student, and the team is continuously developing new material for each level."
+        },
+      ]
+    },
+    {
+      title: "Japan's English culture",
+      slides: [
+        {
+          question: "How long do Japanese students study English?",
+      answer: "In Japan, students are exposed to English for around 10 years, starting from grades 3 to 6, and continue studying it from grades 7 to 12, mainly to achieve high scores on English tests and exams."
+        },
+        {
+          question: "What skills are emphasized in Japanese English classes?",
+      answer: "Approximately 80% of English classes focus on reading and writing, 15% on listening, and only 5% on speaking."
+        },
+        {
+          question: "How often do Japanese people use English in daily life?",
+      answer: "In everyday life, the environment is predominantly Japanese: about 85.9% of interactions are in Japanese. <br><br>English is used in 5.1% of workplace situations, 4.1% with friends or family, and 4.9% in other contexts."
+        },
+      ]
+    },
+    {
+      title: "Feedback Link",
+      slides: [
+        {
+          question: "What is the Performance Feedback link?",
+      answer: "It is the link where the student evaluates the lesson they had with you."
+        },
+      ]
+    },
+    {
+      title: "Recommended Browsers",
+      slides: [
+        {
+          question: "What are the recommended browsers?",
+      answer: "Use the latest version of Google Chrome for best performance. Other supported browsers include Microsoft Edge, Brave, Firefox, Safari, and Vivaldi."
+        },
+      ]
+    },
+  ]
+}
+  ]
+},
 };
 
 const modal = document.getElementById('modal');
@@ -871,12 +995,14 @@ function showModal(sectionKey) {
   panel.innerHTML = `<div>${sub.description}</div>`;
 
   // Determine button label
-  let buttonLabel = "Open Presentation";
-  if (sub.linkType === "spreadsheet" || (sub.link && sub.link.includes("docs.google.com/spreadsheets"))) {
-    buttonLabel = "Open Spreadsheet";
-  } else if (sub.linkType === "document") {
-    buttonLabel = "Open Document";
-  }
+  let buttonLabel = sub.buttonLabel || "Open Presentation";
+if (sub.linkType === "spreadsheet" || (sub.link && sub.link.includes("docs.google.com/spreadsheets"))) {
+  buttonLabel = "Open Spreadsheet";
+} else if (sub.linkType === "document") {
+  buttonLabel = "Open Document";
+} else if (sub.link && sub.link.includes("docs.google.com/forms")) {
+  buttonLabel = "Open Form";
+}
 
   if (sub.link) {
     panel.innerHTML += `
@@ -904,90 +1030,156 @@ function showModal(sectionKey) {
   panel.className = 'subtopic-panel';
   panel.innerHTML = `<div style="margin-bottom:10px;">${sub.description || ""}</div>`;
 
-  const videoList = document.createElement('ul');
-  videoList.style.listStyle = 'none';
-  videoList.style.padding = '0';
+// 1. Place this helper function at the top of your handler or script section:
+function getFaqSlideHtml(slide) {
+  return `
+    <div style="font-weight:bold;font-size:2em;margin-bottom:12px;"><br>Q: ${slide.question}</div>
+    <div style="margin-bottom:6px;font-size:2em;">A: ${slide.answer}</div><br><br>
+  `;
+}
 
-  // Store <li> items for easy show/hide and order restore
-  const videoItems = [];
-  let openedIndex = null;
+  // ---- Inside your showModal (or wherever you handle sub.type === "video-group") ----
+const videoList = document.createElement('ul');
+videoList.style.display = 'grid';
+videoList.style.gridTemplateColumns = 'repeat(auto-fit, minmax(220px, 1fr))';
+videoList.style.gap = '14px';
+videoList.style.listStyle = 'none';
+videoList.style.padding = '0';
 
-  sub.videos.forEach((vid, idx) => {
-    const videoItem = document.createElement('li');
-    videoItem.style.margin = '7px 0';
-    videoItem.style.position = 'relative';
+const videoItems = [];
+let openedIndex = null;
 
-    const videoBtn = document.createElement('button');
-    videoBtn.textContent = vid.title;
-    videoBtn.style.width = '100%';
-    videoBtn.style.padding = '9px 0';
-    videoBtn.style.borderRadius = '5px';
-    videoBtn.style.border = '1px solid #cdd6f5';
-    videoBtn.style.background = '#f6f9ff';
-    videoBtn.style.cursor = 'pointer';
+sub.videos.forEach((vid, idx) => {
+  const videoItem = document.createElement('li');
+  videoItem.style.margin = '7px 0';
+  videoItem.style.position = 'relative';
 
-    // Video player container (for placement below this button)
-    const playerContainer = document.createElement('div');
+  const videoBtn = document.createElement('button');
+  videoBtn.textContent = vid.title;
+  videoBtn.style.width = '100%';
+  videoBtn.style.padding = '9px 0';
+  videoBtn.style.borderRadius = '5px';
+  videoBtn.style.border = '1px solid #cdd6f5';
+  videoBtn.style.background = '#f6f9ff';
+  videoBtn.style.cursor = 'pointer';
+  videoBtn.style.fontWeight = 'bold';
+  videoBtn.style.fontSize = '1.05em';
 
-    videoBtn.onclick = function() {
-      // If this video is already open, close and restore all titles
-      if (openedIndex === idx) {
-        playerContainer.innerHTML = "";
-        openedIndex = null;
-        // Show all video items
-        videoItems.forEach(item => {
-          item.style.display = '';
-        });
-        return;
-      }
-      // Close any other open video and hide all other titles
-      if (openedIndex !== null) {
-        videoItems[openedIndex].querySelector('div').innerHTML = "";
-      }
-      playerContainer.innerHTML = ""; // Clear previous
+  // Container for either video player or FAQ Q&A
+  const playerContainer = document.createElement('div');
 
-const videoTitleElem = document.createElement('div');
-videoTitleElem.textContent = vid.title;
-videoTitleElem.className = 'current-video-title';
-videoTitleElem.style.fontWeight = 'bold';
-videoTitleElem.style.fontSize = '1.1rem';
-videoTitleElem.style.margin = '14px 0 6px 0';
-playerContainer.appendChild(videoTitleElem);
-
-const iframe = document.createElement('iframe');
-iframe.className = 'video-player';
-iframe.src = vid.url;
-iframe.width = "100%";
-iframe.height = "500";
-iframe.allow = "autoplay";
-iframe.setAttribute('allowfullscreen', ''); // <-- THIS IS IMPORTANT!
-iframe.style.borderRadius = "7px";
-iframe.style.boxShadow = "0 2px 12px #0001";
-iframe.style.display = "block";
-iframe.style.margin = "0 auto";
-
-playerContainer.appendChild(iframe);
-
-      openedIndex = idx;
-
-      // Hide all other items except the opened one
-      videoItems.forEach((item, i) => {
-        item.style.display = (i === idx) ? '' : 'none';
+  videoBtn.onclick = function () {
+    // If this item is already open, close it and restore view
+    if (openedIndex === idx) {
+      playerContainer.innerHTML = "";
+      openedIndex = null;
+      // Show all items
+      videoItems.forEach(item => {
+        item.style.display = '';
       });
+      return;
+    }
+    // Close any other open item and hide its content
+    if (openedIndex !== null) {
+      videoItems[openedIndex].querySelector('div').innerHTML = "";
+    }
+    playerContainer.innerHTML = ""; // Clear previous
 
-      // Optionally, scroll so the video is visible
-      setTimeout(() => {
-        videoItem.scrollIntoView({ behavior: "smooth", block: "start" });
-      }, 0);
-    };
+    if (vid.url) {
+      // Pronunciation video logic
+      const videoTitleElem = document.createElement('div');
+      videoTitleElem.textContent = vid.title;
+      videoTitleElem.className = 'current-video-title';
+      videoTitleElem.style.fontWeight = 'bold';
+      videoTitleElem.style.fontSize = '1.1rem';
+      videoTitleElem.style.margin = '14px 0 6px 0';
+      playerContainer.appendChild(videoTitleElem);
 
-    videoItem.appendChild(videoBtn);
-    videoItem.appendChild(playerContainer);
-    videoItems.push(videoItem); // Save reference for show/hide/restore
-    videoList.appendChild(videoItem);
-  });
+      const iframe = document.createElement('iframe');
+      iframe.className = 'video-player';
+      iframe.src = vid.url;
+      iframe.width = "100%";
+      iframe.height = "500";
+      iframe.allow = "autoplay";
+      iframe.setAttribute('allowfullscreen', '');
+      iframe.style.borderRadius = "7px";
+      iframe.style.boxShadow = "0 2px 12px #0001";
+      iframe.style.display = "block";
+      iframe.style.margin = "0 auto";
+      playerContainer.appendChild(iframe);
 
-  panel.appendChild(videoList);
+        } else if (vid.slides && Array.isArray(vid.slides)) {
+      // FAQ Slideshow logic
+      let idxSlide = 0;
+
+      // Create slide container
+      const slideDiv = document.createElement('div');
+      slideDiv.innerHTML = getFaqSlideHtml(vid.slides[idxSlide]);
+      playerContainer.appendChild(slideDiv);
+
+      // Controls
+      const controls = document.createElement('div');
+      controls.style.display = "flex";
+      controls.style.justifyContent = "center";
+      controls.style.alignItems = "center";
+      controls.style.marginTop = "10px";
+
+      const prevBtn = document.createElement('button');
+      prevBtn.textContent = "◀";
+      prevBtn.disabled = true;
+      const nextBtn = document.createElement('button');
+      nextBtn.textContent = "▶";
+      nextBtn.disabled = vid.slides.length <= 1;
+      const indicator = document.createElement('span');
+      indicator.textContent = `${idxSlide+1}/${vid.slides.length}`;
+      indicator.style.margin = "0 12px";
+
+      controls.appendChild(prevBtn);
+      controls.appendChild(indicator);
+      controls.appendChild(nextBtn);
+      playerContainer.appendChild(controls);
+
+      prevBtn.onclick = () => {
+        if (idxSlide > 0) {
+          idxSlide--;
+          slideDiv.innerHTML = getFaqSlideHtml(vid.slides[idxSlide]);
+          indicator.textContent = `${idxSlide+1}/${vid.slides.length}`;
+          prevBtn.disabled = idxSlide === 0;
+          nextBtn.disabled = idxSlide === vid.slides.length-1;
+        }
+      };
+      nextBtn.onclick = () => {
+        if (idxSlide < vid.slides.length-1) {
+          idxSlide++;
+          slideDiv.innerHTML = getFaqSlideHtml(vid.slides[idxSlide]);
+          indicator.textContent = `${idxSlide+1}/${vid.slides.length}`;
+          prevBtn.disabled = idxSlide === 0;
+          nextBtn.disabled = idxSlide === vid.slides.length-1;
+        }
+      };
+    }
+
+    openedIndex = idx;
+
+    // Hide all other items except the opened one
+    videoItems.forEach((item, i) => {
+      item.style.display = (i === idx) ? '' : 'none';
+    });
+
+    // Optionally, scroll so the item is visible
+    setTimeout(() => {
+      videoItem.scrollIntoView({ behavior: "smooth", block: "start" });
+    }, 0);
+  };
+
+  videoItem.appendChild(videoBtn);
+  videoItem.appendChild(playerContainer);
+  videoItems.push(videoItem);
+  videoList.appendChild(videoItem);
+});
+
+// Append the constructed list to your panel or modal area:
+panel.appendChild(videoList);
   panel.style.display = 'none';
 } else if (sub.type === "lesson-grid") {
   panel = document.createElement('div');
@@ -1238,9 +1430,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   document.body.addEventListener('click', function(e) {
   // For debugging: log all clicks
-  console.log('clicked:', e.target, e.target.className);
   if (e.target.classList.contains('enlargeable-img')) {
-    console.log('Opening image modal for', e.target.src);
     imgModalImg.src = e.target.src;
     imgModal.style.display = 'flex';
   }
