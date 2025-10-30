@@ -1,0 +1,609 @@
+/* === Theme variables (easy to tweak) === */
+:root{
+  --bg-blue: #2e7dff;
+  --muted-blue: #eaf2ff;
+  --text: #222;
+  --muted-text: #444;
+  --accent-yellow: #f3c13a;        /* primary yellow accent */
+  --accent-yellow-dark: #c48f16;   /* darker yellow for borders/shadows */
+  --card-bg: #f3f7ff;
+  --glass: rgba(255,255,255,0.65);
+  --radius: 12px;
+  --shadow-blue: 0 6px 32px rgba(46,125,255,0.10);
+  --shadow-soft: 0 2px 12px rgba(0,0,0,0.06);
+  --max-width: 1200px;
+}
+
+/* === Page base === */
+html, body {
+  background: linear-gradient(120deg, rgba(245,247,250,0.75) 0%, rgba(195,207,226,0.65) 100%),
+              url('images/coffee.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  color: var(--text);
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  min-height: 100vh;
+}
+
+/* === Main container === */
+.container {
+  min-height: 100vh;
+  max-width: var(--max-width);
+  margin: 32px auto;
+  background: var(--glass);
+  border-radius: 18px;
+  box-shadow: var(--shadow-blue);
+  padding: 48px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+
+/* Headings & intro */
+.center-header {
+  font-size: 3rem;
+  text-align: center;
+  margin: 0 0 18px 0;
+  color: var(--bg-blue);
+  position: relative;
+}
+.center-header::after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 6px;
+  margin: 12px auto 0;
+  background: linear-gradient(90deg, var(--accent-yellow), rgba(243,193,58,0.6));
+  border-radius: 6px;
+}
+.center-intro {
+  text-align: center;
+  font-size: 1.4rem;
+  margin: 0 0 32px 0;
+  color: var(--muted-text);
+}
+
+/* Global paragraph defaults */
+p {
+  margin: 0 0 1rem;              /* comfortable spacing between paragraphs */
+  color: var(--muted-text);      /* neutral paragraph color */
+  font-size: 1.2rem;               /* readable base size */
+  line-height: 1.6;              /* improves legibility */
+  hyphens: auto;
+}
+/* === Menu layout === */
+.menu.horizontal-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  gap: 30px;
+  margin-top: 36px;
+  flex-wrap: wrap;
+  overflow-x: visible;
+  padding-bottom: 10px;
+}
+
+/* Card */
+.menu-card {
+  background: var(--card-bg);
+  border-radius: 13px;
+  box-shadow: 0 2px 14px rgba(46,125,255,0.07);
+  padding: 30px 38px;
+  min-width: 320px;
+  max-width: 420px;
+  flex: 1 1 320px;
+  transition: box-shadow .18s, transform .14s, background .16s;
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu-card:hover {
+  box-shadow: var(--shadow-blue);
+  background: var(--muted-blue);
+  transform: translateY(-3px) scale(1.02);
+}
+.menu-card h2 {
+  margin-top: 0;
+  color: var(--bg-blue);
+}
+.menu-card p {
+  margin-bottom: 0;
+  color: var(--muted-text);
+}
+
+/* optional warm accent card variant (use class "accent") */
+.menu-card.accent {
+  background: linear-gradient(180deg, #fffaf2 0%, #fff6e6 100%);
+  border: 1px solid rgba(243,193,58,0.06);
+}
+.menu-card.accent:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 8px 30px rgba(196,143,22,0.08);
+}
+
+/* === Modal & accordion === */
+.modal { position: fixed; z-index: 1000; inset: 0; display: flex; align-items: center; justify-content: center; }
+.modal.hidden { display: none; }
+.modal-backdrop { position: fixed; inset: 0; background: #222b; z-index: 1; }
+.modal-close { position: absolute; top: 16px; right: 18px; background: none; border: none; font-size: 2.1rem; color: #888; cursor: pointer; transition: color .17s; z-index: 2; }
+.modal-close:hover { color: var(--bg-blue); }
+.modal-content { position: relative; background: #fff; border-radius: 16px; max-width: 900px; width: 96vw; max-height: 90vh; padding: 32px 24px 30px 24px; box-shadow: 0 8px 48px rgba(46,125,255,0.2); z-index: 2; animation: fadeInUp 0.36s; display: flex; flex-direction: column; }
+.modal-content h2 { margin-top: 0; color: var(--bg-blue); margin-bottom: 19px; }
+
+.subtopic-list { margin: 0; padding: 0; list-style: none; }
+.subtopic-item { margin-bottom: 10px; }
+.subtopic-btn {
+  width: 100%;
+  background: #f8f8f8;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.05rem;
+  color: #333;
+  padding: 13px 16px;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.18s, color 0.18s, box-shadow 0.18s;
+  box-shadow: none;
+  font-weight: 500;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.subtopic-btn.active { background: var(--muted-blue); color: var(--bg-blue); box-shadow: 0 2px 10px rgba(46,125,255,0.09); }
+.subtopic-panel {
+  background: #f5f7fa;
+  border-radius: 10px;
+  padding: 15px 15px 15px 18px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  box-shadow: var(--shadow-soft);
+  animation: fadeInUp .32s;
+}
+
+/* presentation / CTA styles */
+.presentation-link {
+  display: inline-block;
+  margin-top: 12px;
+  background: var(--bg-blue);
+  color: #fff;
+  padding: 9px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background .18s, transform .12s;
+}
+.presentation-link:hover { background: #1951a5; transform: translateY(-1px); }
+
+/* yellow CTA variant (use class 'yellow') */
+.presentation-link.yellow {
+  background: linear-gradient(180deg, var(--accent-yellow) 0%, #e7b94a 100%);
+  color: #221900;
+  box-shadow: 0 6px 18px rgba(196,143,22,0.12);
+  border: 1px solid rgba(196,143,22,0.08);
+}
+.presentation-link.yellow:hover {
+  background: linear-gradient(180deg, var(--accent-yellow-dark) 0%, #d69a1e 100%);
+  transform: translateY(-2px);
+}
+
+/* Slideshow controls */
+.slideshow-controls { display:flex; justify-content:center; gap:10px; margin-top:18px; }
+.slideshow-controls button { font-size:1.12em; padding:4px 14px; border:none; background:#e0eaff; color:var(--bg-blue); border-radius:5px; cursor:pointer; transition:background .18s; }
+.slideshow-controls button:disabled { background:#d9d9d9; color:#aaa; cursor:not-allowed; }
+
+/* Slide content */
+.slide-content { text-align:center; font-size:1.07rem; }
+
+/* Grid for lesson cards */
+.menu.lesson-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* 6-column layout for precise spans */
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+/* helper span classes (use these on individual cards) */
+.menu.lesson-grid .span-6 { grid-column: 1 / -1; }       /* full width */
+.menu.lesson-grid .span-3 { grid-column: span 3; }      /* half-of-6 (3/6) */
+.menu.lesson-grid .span-2 { grid-column: span 2; }      /* third-of-6 (2/6) */
+
+
+.menu.lesson-grid .menu-card { width: 100%; min-width: 0; box-sizing: border-box; }
+
+.menu.lesson-grid .menu-card.span-6 {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 28px 36px;
+}
+
+/* Hint guide row styling (centered, full-width grid child) */
+.hint-guide-row {
+  grid-column: 1 / -1;
+  justify-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+.hint-guide-row .presentation-link { display:inline-block; margin:0 auto; }
+
+/* Video thumbnails and titles */
+.video-thumb-btn { width:100%; padding:0; border-radius:6px; border:1px solid rgba(205,214,245,0.6); background:#fff; cursor:pointer; text-align:left; overflow:hidden; }
+.video-thumb-title {
+  background: linear-gradient(#fffaf0, #fff3d9);
+  border-left: 4px solid var(--accent-yellow-dark);
+  padding:.45rem .6rem;
+  font-weight:700;
+  font-size:1rem;
+  color:#221900;
+  border-radius:6px 6px 0 0;
+  text-align:center;
+  margin:0 0 6px 0;
+}
+
+/* FAQ answer styling with yellow accent */
+.faq-answer {
+  background: linear-gradient(#fffdf0, #fff9e6);
+  border-left: 4px solid var(--accent-yellow-dark);
+  padding: 12px 14px;
+  margin: 8px 0 14px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(2,22,64,0.03);
+  line-height:1.45;
+}
+
+/* Small utility classes */
+.accent-text { color: var(--accent-yellow-dark); font-weight: 700; }
+.badge { display:inline-block; background: linear-gradient(180deg,#fff5e0,#fff0d1); color:#5a3900; font-weight:700; padding:4px 8px; font-size:.85rem; border-radius:999px; border:1px solid rgba(196,143,22,0.08); box-shadow: 0 2px 8px rgba(196,143,22,0.06); }
+
+/* Focus states for accessibility */
+.subtopic-btn:focus,
+.presentation-link:focus,
+.menu-card:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(243,193,58,0.14), 0 6px 20px rgba(0,0,0,0.06);
+  border-radius: 10px;
+}
+
+/* Scrollbar niceties for modal panels */
+.subtopic-panel { max-height:60vh; overflow-y:auto; min-height:0; overscroll-behavior:contain; scrollbar-width:thin; scrollbar-color:#bfcfff #f5f7fa; }
+.subtopic-panel::-webkit-scrollbar { width:8px; background:transparent; }
+.subtopic-panel::-webkit-scrollbar-thumb { background:#c3cfe2; border-radius:8px; opacity:.7; transition:background .2s; }
+.subtopic-panel:hover::-webkit-scrollbar-thumb, .subtopic-panel:active::-webkit-scrollbar-thumb { background:#abbcdc; }
+
+/* Modal header */
+.modal-header { flex:0 0 auto; background:#fff; padding:10px 24px; border-bottom:1px solid #eaeaea; display:flex; align-items:center; justify-content:space-between; }
+
+/* Responsive tweaks (keep behavior from your original file) */
+@media (max-width: 1100px) {
+  .container { padding: 10px 2vw 20px 2vw; }
+  .menu.horizontal-menu { gap: 18px; }
+  .menu-card { min-width: 240px; max-width: 260px; flex: 0 0 260px; }
+}
+@media (max-width: 800px) {
+  .menu.horizontal-menu { gap: 12px; }
+  .menu-card { min-width: 220px; max-width: 230px; flex: 0 0 230px; }
+}
+@media (max-width: 700px) {
+  .menu.lesson-grid { grid-template-columns: 1fr; }
+  .menu.lesson-grid .span-2 { grid-column: auto; }
+  .menu-card { min-width: 180px; max-width: 210px; flex: 0 0 210px; }
+}
+@media (max-width: 600px) {
+  .modal-content { max-width:100vw; width:100vw; border-radius:0; padding:8px 0 16px 0; }
+  .modal-header { padding: 10px 18px; }
+  #modalSubtopics { padding: 0 4px 16px 4px; }
+}
+
+/* Simple animation */
+@keyframes fadeInUp { from {opacity:0; transform:translateY(25px);} to {opacity:1; transform:translateY(0);} }
+
+/* small helpers */
+.centered-button { display:flex; justify-content:center; margin-top:8px; }
+.hinttitle { display:block; margin:0 0 6px 0; font-weight:700; }
+
+
+/* Responsive: reduce column count on medium screens */
+@media (max-width: 1100px) {
+  .menu.lesson-grid { grid-template-columns: repeat(4, 1fr); }
+  /* adapt spans to new 4-col layout */
+  .menu.lesson-grid .span-3 { grid-column: span 2; } /* 3-of-6 -> 2-of-4 */
+  .menu.lesson-grid .span-2 { grid-column: span 1; } /* 2-of-6 -> 1-of-4 */
+  .menu.lesson-grid .span-6 { grid-column: 1 / -1; }
+}
+
+/* Mobile: single column stacking */
+@media (max-width: 700px) {
+  .menu.lesson-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .menu.lesson-grid .span-3,
+  .menu.lesson-grid .span-2,
+  .menu.lesson-grid .span-6 {
+    grid-column: auto; /* let each card be full width in mobile */
+  }
+}
+
+/* Ensure lesson-grid cards truly fill their grid columns (removes the 420px cap) */
+.menu.lesson-grid .menu-card {
+  max-width: none;      /* override the base .menu-card max-width */
+  width: 100%;
+  min-width: 0;         /* prevent overflow from long content */
+  box-sizing: border-box;
+  justify-self: stretch; /* stretch to fill column width */
+  align-self: stretch;   /* stretch vertically if needed */
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* keep card content centered */
+}
+
+/* Optional: make headings/content within very wide cards more readable */
+.menu.lesson-grid .menu-card h2,
+.menu.lesson-grid .menu-card p {
+  max-width: 70ch;      /* limits line length on very wide screens */
+}
+
+.hinttitle {
+  font-size: 1.3em;
+}
+
+ .bold {
+  font-size: 1.5rem; /* fixed absolute-ish size (won't compound) */
+}
+
+/* Add / merge into your stylesheet (near .slide-content rules) */
+
+/* Ensure the slide container used in the lesson cards is centered */
+.lesson-slide-content,
+.slide-content {
+  text-align: center;
+  font-size: 1.07rem;
+}
+
+/* Center paragraphs and hint blocks inside slides */
+.lesson-slide-content p,
+.lesson-slide-content .hint,
+.slide-content p,
+.slide-content .hint {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Optional: keep wide paragraphs readable */
+.lesson-slide-content p,
+.slide-content p {
+  max-width: 70ch;
+  line-height: 1.5;
+}
+
+/* Password Gate Overlay Styles */
+#pw-gate {
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(120deg, rgba(245,247,250,0.82) 0%, rgba(195,207,226,0.78) 100%);
+  backdrop-filter: blur(3px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#pw-gate > div, #pw-gate form {
+  background: rgba(255, 255, 255, 0.93);
+  border-radius: 16px;
+  box-shadow: 0 8px 38px #2e7dff22;
+  padding: 40px 32px 5px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#pw-gate h2 {
+  color: #2563eb;
+  margin-top: 0;
+  margin-bottom: 23px;
+  font-size: 2rem;
+  letter-spacing: 0.5px;
+}
+
+#pw-field {
+  font-size: 1.2em;
+  padding: 0.5em 1.2em;
+  border-radius: 8px;
+  border: 1.5px solid #bfcfff;
+  margin-bottom: 16px;
+  outline: none;
+  background: #f5f7fa;
+  transition: border 0.18s, box-shadow 0.18s;
+  box-shadow: 0 2px 12px #2563eb0c;
+}
+#pw-field:focus {
+  border: 1.5px solid #2563eb;
+  box-shadow: 0 2px 14px #2563eb22;
+}
+
+#pw-gate button {
+  font-size: 1.12em;
+  background: #2563eb;
+  color: #fff;
+  padding: 10px 26px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 6px;
+  box-shadow: 0 2px 12px #2563eb22;
+  font-weight: 600;
+  transition: background 0.18s, box-shadow 0.18s;
+}
+#pw-gate button:hover, #pw-gate button:focus {
+  background: #1947a5;
+  box-shadow: 0 4px 22px #2563eb38;
+}
+
+#pw-msg {
+  color: #d32752;
+  margin-top: 1em;
+  min-height: 1.6em;
+  font-size: 1.03em;
+  text-align: center;
+}
+
+/* Responsive for mobile */
+@media (max-width: 700px) {
+  #pw-gate > div, #pw-gate form {
+    padding: 24px 8vw 20px 8vw;
+    min-width: 0;
+    width: 96vw;
+  }
+  #pw-gate h2 {
+    font-size: 1.3rem;
+  }
+  #pw-field {
+    font-size: 1em;
+    padding: 0.4em 0.7em;
+  }
+}
+
+.img-row-ms-teams {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 8px 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.enlargeable-img-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(46,125,255,0.08);
+  background: linear-gradient(180deg,#fff,#fbfdff);
+  cursor: pointer;
+  color: #114db6;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(2,22,64,0.04);
+}
+
+/* optional smaller style for inline use */
+.img-row-ms-teams .enlargeable-img-btn {
+  padding: 8px;
+  font-size: 0.95rem;
+}
+
+/* Close button for video panels - drop into your style.css */
+
+/* Circular overlay close (top-right) */
+.video-close-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: none;
+  background: rgba(0, 0, 0, 0.56);  /* dark translucent circle */
+  color: #ffffff;
+  cursor: pointer;
+  box-shadow: 0 8px 22px rgba(2, 22, 64, 0.18);
+  transition: background .12s ease, transform .08s ease, box-shadow .12s ease;
+  z-index: 60;
+  backdrop-filter: blur(4px); /* subtle glass effect on supported browsers */
+}
+
+/* Icon inside button (assumes inline SVG or <span>) */
+.video-close-btn svg,
+.video-close-btn .x-icon {
+  width: 18px;
+  height: 18px;
+  display: block;
+  pointer-events: none;
+  stroke: currentColor; /* if SVG stroke used */
+  fill: none;
+}
+
+/* Hover / active */
+.video-close-btn:hover {
+  background: rgba(0, 0, 0, 0.72);
+  transform: translateY(-2px);
+}
+.video-close-btn:active {
+  transform: translateY(0);
+}
+
+/* Visible focus (accessible) */
+.video-close-btn:focus {
+  outline: none;
+  box-shadow:
+    0 6px 18px rgba(2,22,64,0.18),
+    0 0 0 4px rgba(37,99,235,0.14); /* focus ring */
+}
+
+/* Light variant (for dark videos you might want white circle) */
+.video-close-btn--light {
+  background: rgba(255,255,255,0.95);
+  color: #073b7a;
+  box-shadow: 0 8px 22px rgba(2,22,64,0.06);
+}
+
+/* Small/mobile variant */
+.video-close-btn--small {
+  width: 36px;
+  height: 36px;
+}
+@media (max-width: 520px) {
+  .video-close-btn { top: 8px; right: 8px; width: 36px; height: 36px; }
+  .video-close-btn svg { width: 16px; height: 16px; }
+}
+
+/* Optional centered pill-style fallback close button (below video) */
+.video-close-centered {
+  display: inline-block;
+  margin: 14px auto 0;
+  padding: 8px 14px;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #073b7a;
+  border: 1px solid #e6efff;
+  box-shadow: 0 8px 20px rgba(37,99,235,0.06);
+  cursor: pointer;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Utility to visually hide the close but keep it accessible to screen readers */
+.sr-only {
+  position: absolute !important;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+}

@@ -5,56 +5,100 @@
     <meta charset="UTF-8">
     <title>AQUES Training</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="styles.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Merriweather:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
     <link rel="icon" href="images/chalkboard-user-solid-full.svg" type="image/svg+xml">
 </head>
 
 <body>
+    <div id="pw-gate">
+        <div>
+            <h2>Enter Password to Access Training Materials</h2>
+            <input type="password" id="pw-field" placeholder="Password">
+            <button onclick="pwCheck()">Submit</button>
+            <div id="pw-msg"></div>
+        </div>
+    </div>
     <div class="container">
         <h1 class="center-header">AQUES Training</h1>
 
         <!-- LESSON GRID: perfectly aligned two-column grid for both rows -->
         <div class="menu lesson-grid">
-            <div class="menu-card span-2" data-header="main1">
+            <div class="menu-card span-6" data-header="intro">
+                <h2>Introduction to AQUES</h2>
+                <p>
+                    AQUES is a Japanese online English conversation platform offering a unique hybrid learning
+                    experience
+                    led by both a Japanese concierge and a supporter.
+                </p><br>
+                <p>
+                    To support progress, custom materials are provided to practice pronunciation, grammar, and
+                    conversation
+                    skills, making each lesson both engaging and effective.
+                </p><br>
+                <p>
+                    With zero preparation or review required, learners enjoy efficient, stress-free lessons tailored to
+                    real-world speaking skills. All lessons are one-on-one, and AQUES is popular among adult learners
+                    aged
+                    18 to 75, helping them speak English confidently without ever leaving Japan.
+                </p>
+            </div>
+            <div class="menu-card span-6" data-header="main1">
+
                 <h2>Training Objective</h2>
                 <p>This training aims to equip participants with the knowledge and skills needed to effectively use the
                     AQUES system, deliver structured lessons, and execute materials proficiently. Participants will be
                     assessed on lesson flow, communication, and overall teaching performance.</p>
             </div>
-            <div class="menu-card" data-header="main2">
+
+
+            <div class="menu-card span-3" data-header="main2">
                 <h2>Part 1: Rules</h2>
                 <p>This set of guidelines helps supporters maintain a professional and effective environment during
                     AQUES lessons.</p>
             </div>
-            <div class="menu-card" data-header="main3">
+            <div class="menu-card span-3" data-header="main3">
                 <h2>Part 2: Lesson Flow</h2>
                 <p>This guide shows how to conduct the mock demo, reflecting an actual AQUES lesson, aligning with
                     student expectations, and demonstrating the structured flow of the lesson.</p>
             </div>
-            <div class="menu-card" data-header="pronunciation">
-                <h2>Pronunciation</h2>
-                <p>This training helps Japanese learners practice pronunciation, the linking and dropping of sounds, and
-                    the natural rhythm of English to improve their speaking and listening skills.</p>
+
+            <!-- Row: Pronunciation / Translation / ACP (three equal columns on wide screens) -->
+            <div class="menu-card span-2" data-header="pronunciation">
+                <h2>Part 3: <br>Pronunciation</h2>
+                <p>This training helps Japanese learners practice pronunciation, linking/dropping sounds, and the
+                    natural rhythm of English to improve their speaking and listening skills.</p>
             </div>
-            <div class="menu-card" data-header="translation">
-                <h2>Translation Exercise</h2>
+            <div class="menu-card span-2" data-header="translation">
+                <h2>Part 3: <br>Translation Exercise</h2>
                 <p>In this exercise, students learn English through set phrases and expressions. With continuous
-                    repetition, they build vocabulary, fluency, and conversational skills</p>
+                    repetition, they build vocabulary, fluency, and conversational skills.</p>
             </div>
-            <!-- ACP Foundations, stretches full width -->
             <div class="menu-card span-2" data-header="acp">
-                <h2>ACP Foundations</h2>
+                <h2>Part 3: <br>ACP Foundations</h2>
                 <p>This training is designed to help students describe pictures, learn new vocabulary, and improve their
                     conversational skills.</p>
             </div>
-            <div class="menu-card span-2-half" data-header="mockdemo">
+
+            <!-- Row: Mock Demo + Quiz (two equal halves) -->
+            <div class="menu-card span-3" data-header="mockdemo">
                 <h2>Mock Demo Sample Videos</h2>
                 <p>Watch sample mock demo lesson videos to better understand flow and expectations for your session.</p>
             </div>
-            <div class="menu-card span-2-half" data-header="quizfaq">
+            <div class="menu-card span-3" data-header="quizfaq">
                 <h2>Quiz, Feedback, FAQs</h2>
                 <p>Test your knowledge with a quiz, leave feedback on the training, or browse frequently asked
                     questions.</p>
+            </div>
+
+            <!-- All Access banner: full width -->
+            <div class="menu-card span-6 all-access-card" role="region" aria-label="All Access Training">
+                <h2>All Access</h2>
+                <p class="desc">All training links and videos in one place.</p>
+                <a class="presentation-link" href="/all-access.html" target="_blank" rel="noopener noreferrer">Open All
+                    Access</a>
             </div>
         </div>
 
@@ -77,6 +121,33 @@
             <span id="img-modal-close"
                 style="position:absolute;top:24px;right:48px;color:#fff;font-size:2rem;cursor:pointer;">&times;</span>
         </div>
+        <!-- Password gate script-->
+        <script>
+            const passwordHash = "73f352698475d448fc6699de0969626232952fe5e8a9a0e2ecd7681170189006"; //AquesTrainingBarry2025
+            const pwGateKey = 'passedPwGate'; // Can add '-v2' if you want to reset for everyone
+
+            async function sha256(str) {
+                const buf = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(str));
+                return Array.from(new Uint8Array(buf)).map(x => x.toString(16).padStart(2, '0')).join('');
+            }
+
+            async function pwCheck() {
+                const val = document.getElementById('pw-field').value;
+                const hash = await sha256(val);
+                if (hash === passwordHash) {
+                    localStorage.setItem(pwGateKey, passwordHash); // save the hash
+                    document.getElementById('pw-gate').style.display = 'none';
+                } else {
+                    document.getElementById('pw-msg').textContent = "Incorrect password.";
+                }
+            }
+
+            window.addEventListener('DOMContentLoaded', () => {
+                if (localStorage.getItem(pwGateKey) === passwordHash) {
+                    document.getElementById('pw-gate').style.display = 'none';
+                }
+            });
+        </script>
 
         <script src="main.js"></script>
     </div>

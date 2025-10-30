@@ -42,23 +42,40 @@ const DATA = {
       {
         title: "Rules & Regulations",
         type: "presentation",
-        linkType: "spreadsheet",
-        description: `<span style='font-size:1.3em; font-weight:bold;'>View the full spreadsheet here.</span>`,
-        link: "https://docs.google.com/spreadsheets/d/1zgSzXH97DOlbdfZbZ0jXXI-u--a7zia-pv2UW34Lc0U/edit?gid=0#gid=0"
-      },
+        linkType: "pdf",
+      description: `<span style='font-size:1.3em; font-weight:bold;'>View the full spreadsheet here.</span>`,
+            link: "https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2IvYy9mOWU2OGRlMzIwMTExYmFkL0VYczhUWk51dzN4SHFSazVRVU9uUDdRQnRxN1FFdWRnWVBRSy11YWdOb0VtRnc&cid=F9E68DE320111BAD&id=F9E68DE320111BAD%21s934d3c7bc36e477ca919394143a73fb4&parId=F9E68DE320111BAD%21sc4653b6843a84f66ab68525e22193750&o=OneUp"
+    },
       {
         title: "Basic Troubleshooting",
         type: "slideshow",
         slides: [`<br><span class="hinttitle">5-minute Rule</span><br><br>
 	<span class="bold">• If a supporter has technical issues or delays, the supporter <em><mark>must contact the support team immediately.</mark></em><br><br>
   • The supporter has 5 minutes to resolve the issue with support team's help. Otherwise, another supporter will take over.<br><br><br>`,
+  `<br><span class="hinttitle">How does the 5-minute rule apply in an applicant’s mock demo?</span><br><br>
+	<span class="bold">• If any technical issue or delay on the supporter’s end during the mock demo cannot be resolved within five (5) minutes, <em><mark>the mock demo must be rescheduled.</mark></em><br><br>
+  • Before receiving a new schedule, the supporter <em><mark>must fix the issue and undergo a technical check by TQA</mark></em> to ensure everything is functioning properly.<br><br><br>`,
   `<br><span class="hinttitle">SUPPORTER IS LATE | HAS DELAYS OR DISRUPTIONS </span><br><br>
-	<span class="bold">• If you’re late or encounter issues during the lesson, you must offer and ask the student about a possible extension.<br><br>
+	<span class="bold">• If you’re late or encounter issues during the lesson, <em><mark>you must offer and ask the student about a possible extension.</mark></em><br><br>
+
+  <div class="indented-block" role="group" aria-label="Extension responses" style="margin-left:1rem;border-left:3px solid #eee;padding-left:1rem;">
+    <div class="resp" style="margin:.5rem 0">
+      <div class="resp-title" style="font-weight:700;margin-top:.25rem">【If the student agrees to the extension】</div>
+      <div>"Thank you very much for your understanding. Okay, then we are going to extend our lesson by __ minutes today."</div><br>
+    </div>
+
+    <div class="resp" style="margin:.5rem 0">
+      <div class="resp-title" style="font-weight:700;margin-top:.25rem">【If the student says, “no”】</div>
+      <div>"Okay, I understand. Again, I am very sorry for the inconvenience, but you can still extend your lesson another time, so please tell your Japanese concierge that you couldn't extend your lesson this time. Your concierge should be able to help you with that."</div>
+    </div>
+  </div><br>
+
   • Extensions are allowed <em><mark>ONLY</mark></em> if the delay is on your end and the student agrees.<br><br><br>`,
   `<br><span class="hinttitle">STUDENT IS LATE </span><br><br>
 	<span class="bold">• <em><mark>Never extend</mark></em> the lesson if the student is late.<br><br><br>`,
   `<br><span class="hinttitle">MS TEAMS ISSUES</span><br><br>
-	<span class="bold">•  If the lesson cannot start due to a Microsoft Teams issue, <em><mark>report it to the support team immediately. </mark></em><br><br><br>`,
+	<span class="bold">•  If the lesson cannot start due to a Microsoft Teams issue, <em><mark>report it to the support team immediately. </mark></em><br><br>
+  •  For any technical concerns, please contact the Reagent Training Team through their MS Teams account.</em><br><br><br>`,
   `<br><span class="hinttitle">MS TEAMS SCREEN SHARING</span><br><br>
 	<span class="bold">•  If you encounter screen-sharing issues, <em><mark>re-share your screen.</mark></em><br><br>
   •  Avoid dead air, keep the student engaged while you're resolving the issue.</span><br><br><br>`,
@@ -73,33 +90,28 @@ const DATA = {
 <br><br><br>`,
   `<br><span class="hinttitle">1. MS Teams check:</span><br><br>
 	<span class="bold">a. Camera settings<br><br>
-  b. Audio settings<br><br>c. Make a camera test using "Meet now" in MS calendar<br><br><br> `,
+  b. Audio settings<br><br>c. Camera test using "Meet now" in MS calendar<br><br>d. Test audio and video via the "Echo / Sound Test Service"<br><br><br> `,
 
 
   `<br><span class="hinttitle">1. MS Teams check (Camera Settings). </span><br><br>
 	<span class="bold">• Use a high-definition camera.
 <br><br>
-<button class="enlargeable-img-btn"
-  data-img-src="https://res.cloudinary.com/dvlwxkj7y/image/upload/v1756602301/Camset_aetkad.png">
-  📷 Click image to view
-</button><br>
+<div class="img-row-ms-teams" role="group" aria-label="example images"> <button class="enlargeable-img-btn" data-img-src="https://res.cloudinary.com/dvlwxkj7y/image/upload/v1756602301/Camset_aetkad.png"> 📷 Click image to view </button> <button class="enlargeable-img-btn" data-img-src="https://res.cloudinary.com/dvlwxkj7y/image/upload/v1760994065/webver1_qcvuv4.png"> 📷 Click image to view </button> </div><br>
+
   <span class="bold"><b>NOTE:</b> Supporters are not allowed to use virtual backgrounds.<br><br>
   <button class="enlargeable-img-btn"
   data-img-src="https://res.cloudinary.com/dvlwxkj7y/image/upload/v1756597742/camerasettings1_kugdux.png">
   📷 Click image to view
-</button><br>`,
+</button><br><br>`,
 
   `<br><span class="hinttitle">1. MS Teams check (Audio Settings)</span><br><br>
   <span class="bold">•  Use a noise-canceling headset with an external microphone.<br><br>
   <span class="bold">• Select your headset’s brand for both mic and speakers. <br><br>
   <span class="bold">•  You may use Microsoft Teams’ built-in noise suppression. <br><br>
   <span class="bold">•  Third-party noise-cancellation apps are not allowed. <br><br>
-  <button class="enlargeable-img-btn"
-  data-img-src="https://res.cloudinary.com/dvlwxkj7y/image/upload/v1756602169/Audiosettings_bcinog.png">
-  📷 Click image to view
-</button><br>`,
+ <div class="img-row-ms-teams" role="group" aria-label="example images"> <button class="enlargeable-img-btn" data-img-src="https://res.cloudinary.com/dvlwxkj7y/image/upload/v1756602301/Camset_aetkad.png"> 📷 Click image to view </button> <button class="enlargeable-img-btn" data-img-src="https://res.cloudinary.com/dvlwxkj7y/image/upload/v1760994065/webver1_qcvuv4.png"> 📷 Click image to view </button> </div><br>`,
 
-  `<br><span class="hinttitle">1. MS Teams check (c. Make a camera test using "Meet now" in MS calendar)</span><br><br>
+  `<br><span class="hinttitle">1. MS Teams check (c. Camera test using "Meet now" in MS calendar)</span><br><br>
 	<span class="hinttitle">For Desktop (Windows/Mac)<br><br></span>
   <span class="bold">1. Open Microsoft Teams (desktop app or browser).<br><br>
   <span class="bold">2. In the left sidebar, click Calendar.<br><br>
@@ -108,13 +120,33 @@ const DATA = {
   <button class="enlargeable-img-btn"
   data-img-src="https://res.cloudinary.com/dvlwxkj7y/image/upload/v1756596024/videosettings_lvaksv.png">
   📷 Click image to view
-</button><br>
+</button><br><br>
 <b>NOTE:</b> You can leave the meeting anytime. No one else will join unless invited, so <mark><em>it's safe for testing.</em></mark><br><br>`,
 
+  `<br><span class="hinttitle">1. MS Teams check (d. Test audio and video via the "Echo / Sound Test Service")</span><br><br>
+  <span class="bold">1. Search for "Echo / Sound Test Service" on Microsoft Teams.<br><br>
+  
+   <button class="enlargeable-img-btn"
+  data-img-src="https://res.cloudinary.com/dvlwxkj7y/image/upload/v1761043394/Echo_mmr4be.png">
+  📷 Click image to view</button><br><br>
+
+  <span class="bold">2. Select "Video Call."<br><br>
+
+   <button class="enlargeable-img-btn"
+  data-img-src="https://res.cloudinary.com/dvlwxkj7y/image/upload/v1761043473/echo1_vbymzb.png">
+  📷 Click image to view</button><br><br>
+
+  <span class="bold">3. Follow the voice prompt to check your audio and video.<br><br>
+  
+  <button class="enlargeable-img-btn"
+  data-img-src="https://res.cloudinary.com/dvlwxkj7y/image/upload/v1761043549/echo2_vhzp37.png">
+  📷 Click image to view</button><br><br>`,
+
   `<br><span class="hinttitle">2. Background Wall check</span><br><br>
-	<span class="bold">• Virtual backgrounds are not allowed.<br><br>
-  • Use a plain-colored background of any color, as long as it is plain.
-<br><br><br>`,
+	<span class="bold">• Blurry and visual background is not allowed.<br><br>
+  • A plain, light-colored background is required.
+<br><br>
+• Dark colors are not allowed.<br><br><br>`,
 
 `<br><span class="hinttitle">3. Lighting check</span><br><br>
 	<span class="bold">• Your face must be clearly visible and well-lit.<br><br>
@@ -134,12 +166,11 @@ const DATA = {
         `<br><div>
      <div><strong class="bold">1. Prepare the needed materials at least 30-10 minutes beforehand.</div><br>
      Material Preparation: </strong><br><br>
-     <a 
-  href="https://docs.google.com/spreadsheets/d/1p3HKc6yuBI8TVhDEDnREc0Y3Lcjrf81iDN-jSLnv35c/edit?gid=156011472#gid=156011472" 
-  target="_blank" 
-  style="display:inline-block;padding:8px 16px;margin-bottom:20px;background:#2a62c7;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
-  📄 View the Lesson Plan Link
-</a><br>
+     <a href="https://docs.google.com/spreadsheets/d/1p3HKc6yuBI8TVhDEDnREc0Y3Lcjrf81iDN-jSLnv35c/edit?gid=156011472#gid=156011472"
+   target="_blank"
+   class="presentation-link view-lesson-btn">
+  <span class="link-icon" aria-hidden>📄</span> View the Lesson Plan Link
+</a><br><br>
      <iframe 
     src="https://drive.google.com/file/d/1FUtTGkdDQCIdeuLbd8G_aJw9oEei_kSP/preview" 
     width="100%" 
@@ -244,7 +275,7 @@ If a problem occurs during the lesson or before it starts, please contact the ch
 <br><br><br>`,
 
 `<span class="hinttitle">C. LESSON CONCLUSION</span><br><br>
-	<span class="bold">7. Wrap-Up (Extend 1 minute more)<br>
+	<span class="bold">7. Wrap-Up (Extend 1 minute more)<br><br>
 <b>a.</b> Apology - "I’m sorry time is up.”<br>
 <b>b.</b>  Appreciation - “Thank you for your time today.”<br>
 <b>c.</b>  State your name - "Once again, I am Supporter Mandy."<br>
@@ -312,45 +343,65 @@ https://docs.google.com/forms/d/e/1FAIpQLScsAiiTV_bdBIEcy7bwd0GZ45-0Kw2tiuiGemmw
         description: "<span style='font-size:1.3em; font-weight:bold;'>Select a video below to watch.</span>",
         videos: [
           {
-            title: "Japanese Instructions",
-            url: "https://drive.google.com/file/d/1uskMAJLJ-jbNJ13T0TD5mhnM4vv5qFXT/preview"
-          },
+  title: "Japanese Instructions",
+  url: "https://drive.google.com/file/d/1uskMAJLJ-jbNJ13T0TD5mhnM4vv5qFXT/preview",
+  thumbnail: "https://res.cloudinary.com/dvlwxkj7y/image/upload/v1761132383/jap_ins_j1yjxk.png",
+  source: "drive"
+},
           {
             title: "Consonant Sounds",
-            url: "https://drive.google.com/file/d/1GUBfaro2Pzw3Sp1cTFxBuWvu8Q4l0-mx/preview"
-          },
+            url: "https://drive.google.com/file/d/1GUBfaro2Pzw3Sp1cTFxBuWvu8Q4l0-mx/preview",
+          thumbnail: "https://res.cloudinary.com/dvlwxkj7y/image/upload/v1761044598/consonant_tokoid.png",
+  source: "drive"
+},
           {
             title: "Single Sound Practice",
-            url: "https://drive.google.com/file/d/1HX2g2-X7oLCSByMGER4U8pm8GD086dVH/preview"
-          },
+            url: "https://drive.google.com/file/d/1HX2g2-X7oLCSByMGER4U8pm8GD086dVH/preview",
+          thumbnail: "https://res.cloudinary.com/dvlwxkj7y/image/upload/v1761132471/single_sound_xmjkja.png",
+  source: "drive"
+},
           {
             title: "Pair Sound Practice",
-            url: "https://drive.google.com/file/d/1pXLi2_IvuZDeidohGMO-o-65hipZooPJ/preview"
-          },
+            url: "https://drive.google.com/file/d/1pXLi2_IvuZDeidohGMO-o-65hipZooPJ/preview",
+          thumbnail: "https://res.cloudinary.com/dvlwxkj7y/image/upload/v1761132635/Pair_sqckps.png",
+  source: "drive"
+},
           {
             title: "Linking Sounds",
-            url: "https://drive.google.com/file/d/1cgeNeguoIOrFP3EoDxlpDzYEOeleobiW/preview"
-          },
+            url: "https://drive.google.com/file/d/1cgeNeguoIOrFP3EoDxlpDzYEOeleobiW/preview",
+          thumbnail: "https://res.cloudinary.com/dvlwxkj7y/image/upload/v1761132700/link_kytt3m.png",
+  source: "drive"
+},
           {
             title: "Dropping Sounds",
-            url: "https://drive.google.com/file/d/1pw_cyerOk2Ko_JEtHw5HGo4TjiFt340k/preview"
-          },
+            url: "https://drive.google.com/file/d/1pw_cyerOk2Ko_JEtHw5HGo4TjiFt340k/preview",
+          thumbnail: "https://res.cloudinary.com/dvlwxkj7y/image/upload/v1761132795/drop_vo3vkp.png",
+  source: "drive"
+},
           {
             title: "Sound Changes",
-            url: "https://drive.google.com/file/d/17bYBjcTd6bPWrJUtuuTlGxm2LM3DmIQY/preview"
-          },
+            url: "https://drive.google.com/file/d/17bYBjcTd6bPWrJUtuuTlGxm2LM3DmIQY/preview",
+          thumbnail: "https://res.cloudinary.com/dvlwxkj7y/image/upload/v1761132838/change_jzfkc3.png",
+  source: "drive"
+},
           {
             title: "Intonation",
-            url: "https://drive.google.com/file/d/1LX2iXEoBi5FbH2o-r6aFA8QVdTBYLsQe/preview"
-          },
+            url: "https://drive.google.com/file/d/1LX2iXEoBi5FbH2o-r6aFA8QVdTBYLsQe/preview",
+          thumbnail: "https://res.cloudinary.com/dvlwxkj7y/image/upload/v1761132894/into_gkzicu.png",
+  source: "drive"
+},
           {
             title: "Dictation Pile-up",
-            url: "https://drive.google.com/file/d/1H1ETITj5p9rukvAEoFcu2B64Dt59wN-f/preview"
-          },
+            url: "https://drive.google.com/file/d/1H1ETITj5p9rukvAEoFcu2B64Dt59wN-f/preview",
+          thumbnail: "https://res.cloudinary.com/dvlwxkj7y/image/upload/v1761132967/dictation_tqdydq.png",
+  source: "drive"
+},
           {
             title: "Dictation Pile-up Review",
-            url: "https://drive.google.com/file/d/19F4Lm0LMFqvawzT4YV6ksc03uMnPE5Ll/preview"
-          }
+            url: "https://drive.google.com/file/d/19F4Lm0LMFqvawzT4YV6ksc03uMnPE5Ll/preview",
+          thumbnail: "https://res.cloudinary.com/dvlwxkj7y/image/upload/v1761133025/dic_pile-up_xfh9ti.png",
+  source: "drive"
+}
         ]
       }
     ]
@@ -369,6 +420,10 @@ https://docs.google.com/forms/d/e/1FAIpQLScsAiiTV_bdBIEcy7bwd0GZ45-0Kw2tiuiGemmw
     Supporter: <b>Very good. Your translation is correct. But let's practice this word. Please repeat after me: <i>SALAD</i></b><br><br>
     (the student repeats)<br><br>
     Supporter: <b>Good! Let's try one more time: <i>SALAD</i></b></span><br><br><br>`,
+    
+    `<span class="hinttitle"><b>1. Pronunciation Rules: Sample Video</span></b><br><br><span class="bold">
+    <iframe src="https://drive.google.com/file/d/1YpKjaTUOW7Q2XW7vgOuEqHMqp8UdY1NM/preview" width="100%" height="400" allowfullscreen allow="autoplay"></iframe><br><br>`,
+    
           `<span class="hinttitle"><b>2. Compliments:</span></b><br><br> <span class="bold"><b>Avoid saying "No," "Your answer is wrong," or "That is incorrect."</b><br><br>
           • Choose positive and encouraging words.<br><br>
           • Include a variety of simple compliments.</span><br><br><br>`,
@@ -378,7 +433,14 @@ https://docs.google.com/forms/d/e/1FAIpQLScsAiiTV_bdBIEcy7bwd0GZ45-0Kw2tiuiGemmw
           <b>IF unsure:</b><br>
       • Be honest and say you’ll research and follow up after the lesson or next meeting.</span><br><br><br>`,
       `<span class="hinttitle"><b>4. Contraction:</span></b><br><br>
-      	<span class="bold">• Accept both contracted and non-contracted forms as correct.</span><br><br><br>`,
+      	<span class="bold">• Accept both contracted and non-contracted forms as correct.</span><br>
+        
+        <div class="img-row-ms-teams" role="group" aria-label="example images"> <button class="enlargeable-img-btn" data-img-src="https://res.cloudinary.com/dvlwxkj7y/image/upload/v1761282863/contract_d1vsx7.png"> Contraction </button> 
+
+ <div class="img-row-ms-teams" role="group" aria-label="example images"> <button class="enlargeable-img-btn" data-img-src="https://res.cloudinary.com/dvlwxkj7y/image/upload/v1761283032/contract_2_moodj8.png"> Contraction: Mulitple Possible Answers </button> 
+
+
+  <div class="img-row-ms-teams" role="group" aria-label="example images"> <button class="enlargeable-img-btn" data-img-src="https://res.cloudinary.com/dvlwxkj7y/image/upload/v1761283095/Contract_3_ve0xda.png"> Contraction: Slash & Parenthesis </button><br><br><br>`,
         ]
       },
       {
@@ -389,7 +451,7 @@ https://docs.google.com/forms/d/e/1FAIpQLScsAiiTV_bdBIEcy7bwd0GZ45-0Kw2tiuiGemmw
           
           <br><span class="bold">1. Address one mistake at a time. Give three attempts per mistake.<br><br>
           2. Consider the student's first translation the first attempt.<br><br>
-          3. Give hints after every incorrect attempt.<br><br>
+          3. Give hints after every incorrect attempt, and always start each hint with a Heads-up.<br><br>
           <b>NOTE:</b><br><br>
           • After the third attempt, provide the answer or the missing word.<br><br>
           • Encourage 1 to 2 sentence repetition after the correct translation.</span><br><br><br>`,
@@ -748,6 +810,19 @@ https://docs.google.com/forms/d/e/1FAIpQLScsAiiTV_bdBIEcy7bwd0GZ45-0Kw2tiuiGemmw
     title: "ACP Materials",
     subtopics: [
       {
+        title: "Active Conversation Practice",
+        type: "slideshow",
+      slides: [
+        `<br><div><strong class="bold">Key Guidelines for ACP</div><br></strong>
+     <span class="bold">• Do not call it “Free Talk." </span><br><br>
+     <span class="bold">• Use simple English and adjust questions to the student’s level. </span><br><br>
+     <span class="bold">• Be flexible. Rephrase or simplify instead of forcing understanding. </span><br><br>
+     <span class="bold">• Maintain a speaking ratio of 80% Student | 20% Supporter. </span><br><br>
+     <span class="bold">• Avoid work, school, family background, and sensitive topics (death, illness, politics, religion, etc.). </span><br><br>
+     <br></div>`
+      ]
+      },
+      {
         title: "ACP Bullseye",
         type: "presentation",
         description: "<span style='font-size:1.3em; font-weight:bold;'>View the presentation.</span>",
@@ -766,19 +841,6 @@ https://docs.google.com/forms/d/e/1FAIpQLScsAiiTV_bdBIEcy7bwd0GZ45-0Kw2tiuiGemmw
         link: "https://docs.google.com/presentation/d/1VTHK6vSIozHzQ1LC8Gy-NRXRPlVo_bo4kg7R6mc94ns/edit#slide=id.g54947bdb7a_0_0"
       },
       {
-        title: "Active Conversation Practice",
-        type: "slideshow",
-      slides: [
-        `<br><div><strong class="bold">Key Guidelines for ACP</div><br></strong>
-     <span class="bold">• Do not call it “Free Talk." </span><br><br>
-     <span class="bold">• Use simple English and adjust questions to the student’s level. </span><br><br>
-     <span class="bold">• Be flexible. Rephrase or simplify instead of forcing understanding. </span><br><br>
-     <span class="bold">• Maintain a speaking ratio of 80% Student | 20% Supporter. </span><br><br>
-     <span class="bold">• Avoid work, school, family background, and sensitive topics (death, illness, politics, religion, etc.). </span><br><br>
-     <br></div>`
-      ]
-      },
-      {
   title: "Mimic Method",
   type: "slideshow",
   slides: [
@@ -790,11 +852,11 @@ https://docs.google.com/forms/d/e/1FAIpQLScsAiiTV_bdBIEcy7bwd0GZ45-0Kw2tiuiGemmw
     <br><br>• This shows you understand them, boosts their confidence, and encourages them to speak more. </span><br><br><br>`,
 
     `<br><div><strong class="bold">How to apply the mimic method?</strong></div><br>
-    <span class="bold">• Ask a question </span><br><br>
-    <span class="bold">• Wait for the student’s response </span><br><br>
-    <span class="bold">• React to what the student said </span><br><br>
-    <span class="bold">• Mimic the student’s response </span><br><br>
-    <span class="bold">• Ask a follow-up question based on their response. </span><br><br>
+    <span class="bold">• Ask a question </span><br>
+    <span class="bold">• Wait for the student’s response </span><br>
+    <span class="bold">• React to what the student said </span><br>
+    <span class="bold">• Mimic the student’s response </span><br>
+    <span class="bold">• Ask a follow-up question based on their response. </span><br>
     <span class="bold">• Repeat the steps. </span><br><br><br>
     `,
 
@@ -851,9 +913,9 @@ https://docs.google.com/forms/d/e/1FAIpQLScsAiiTV_bdBIEcy7bwd0GZ45-0Kw2tiuiGemmw
     },
     {
   title: "Frequently Asked Questions (FAQs)",
-  type: "video-group",
-  description: "<span style='font-size:1.2em;font-weight:bold;'>Click a topic to view the full Q&A.</span>",
-  videos: [
+  type: "faq-group",
+  description: "<span style='font-size:1.2em;font-weight:bold;'>Click a question to reveal the answer.</span>",
+  topics: [
     {
       title: "Training",
       slides: [
@@ -942,6 +1004,49 @@ const modalTitle = document.getElementById('modalTitle');
 const modalSubtopics = document.getElementById('modalSubtopics');
 const modalClose = document.getElementById('modalClose');
 
+function safeAppend(parent, child, info) {
+  try {
+    if (!(parent instanceof Node)) {
+      console.error('safeAppend: parent is NOT a DOM Node', { parent, info });
+      return;
+    }
+    if (!(child instanceof Node)) {
+      // Print a short, safe snapshot and return (DO NOT throw)
+      let childInfo;
+      try { childInfo = JSON.stringify(child).slice(0, 800); } catch (e) { childInfo = String(child); }
+      console.error('safeAppend: child is NOT a DOM Node — skipping append', {
+        typeofChild: typeof child,
+        childConstructor: child && child.constructor && child.constructor.name,
+        childSnapshot: childInfo,
+        info
+      });
+      return;
+    }
+    parent.appendChild(child);
+  } catch (err) {
+    console.error('safeAppend: unexpected error while appending', err, { parent, child, info });
+  }
+}
+
+// --- create containers for thumbnails and player (run once) ---
+(function createVideoContainers(){
+  const root = document.getElementById('app') || document.body;
+  if (!document.getElementById('video-thumbs')) {
+    const thumbs = document.createElement('div');
+    thumbs.id = 'video-thumbs';
+    thumbs.style.display = 'flex';
+    thumbs.style.flexWrap = 'wrap';
+    thumbs.style.gap = '.6rem';
+    root.appendChild(thumbs);
+  }
+  if (!document.getElementById('video-player')) {
+    const player = document.createElement('div');
+    player.id = 'video-player';
+    player.style.marginTop = '12px';
+    root.appendChild(player);
+  }
+})();
+
 // Open modal for section
 document.querySelectorAll('.menu-card').forEach(card => {
   card.addEventListener('click', () => {
@@ -960,7 +1065,7 @@ function showModal(sectionKey) {
   // Render subtopics as accordion
   const ul = document.createElement('ul');
   ul.className = 'subtopic-list';
-  section.subtopics.forEach((sub, idx) => {
+  const subtopics = section.subtopics || section.topics || section.videos || []; subtopics.forEach((sub, idx) => {
     const li = document.createElement('li');
     li.className = 'subtopic-item';
     // Accordion header
@@ -977,8 +1082,8 @@ function showModal(sectionKey) {
   if (sub.videoUrl.includes("drive.google.com")) {
     // Use iframe for Google Drive videos
     panel.innerHTML += `
-  <iframe src="${sub.videoUrl}" width="100%" height="500" style="border-radius:7px;box-shadow:0 2px 12px #0001;" allow="autoplay"></iframe>
-`;
+
+<iframe src="${sub.videoUrl}" width="100%" height="500" style="border-radius:7px;box-shadow:0 2px 12px #0001;" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe> `;
   } else {
     // Use <video> for direct links
     panel.innerHTML += `
@@ -1025,163 +1130,310 @@ if (sub.linkType === "spreadsheet" || (sub.link && sub.link.includes("docs.googl
           <button class="slide-next"${sub.slides.length <= 1 ? ' disabled' : ''}>▶</button>
         </div>
       `;
-    } else if (sub.type === "video-group") {
-  panel = document.createElement('div');
-  panel.className = 'subtopic-panel';
-  panel.innerHTML = `<div style="margin-bottom:10px;">${sub.description || ""}</div>`;
+    } else if (sub.type === "video-group" || sub.type === "faq-group") {
+  // Decide whether this group is FAQ-shaped (items contain .slides/questions)
+  const items = Array.isArray(sub.topics) ? sub.topics : (Array.isArray(sub.videos) ? sub.videos : []);
+  const looksLikeFaq = items.length > 0 && !!items[0].slides;
+  const treatAsFaq = sub.type === "faq-group" || looksLikeFaq;
 
-// 1. Place this helper function at the top of your handler or script section:
-function getFaqSlideHtml(slide) {
-  return `
-    <div style="font-weight:bold;font-size:2em;margin-bottom:12px;"><br>Q: ${slide.question}</div>
-    <div style="margin-bottom:6px;font-size:2em;">A: ${slide.answer}</div><br><br>
-  `;
-}
+  if (treatAsFaq) {
+    // --- FAQ rendering (no video thumbnails) ---
+    panel = document.createElement('div');
+    panel.className = 'subtopic-panel';
+    panel.style.display = 'none';
 
-  // ---- Inside your showModal (or wherever you handle sub.type === "video-group") ----
-const videoList = document.createElement('ul');
-videoList.style.display = 'grid';
-videoList.style.gridTemplateColumns = 'repeat(auto-fit, minmax(220px, 1fr))';
-videoList.style.gap = '14px';
-videoList.style.listStyle = 'none';
-videoList.style.padding = '0';
-
-const videoItems = [];
-let openedIndex = null;
-
-sub.videos.forEach((vid, idx) => {
-  const videoItem = document.createElement('li');
-  videoItem.style.margin = '7px 0';
-  videoItem.style.position = 'relative';
-
-  const videoBtn = document.createElement('button');
-  videoBtn.textContent = vid.title;
-  videoBtn.style.width = '100%';
-  videoBtn.style.padding = '9px 0';
-  videoBtn.style.borderRadius = '5px';
-  videoBtn.style.border = '1px solid #cdd6f5';
-  videoBtn.style.background = '#f6f9ff';
-  videoBtn.style.cursor = 'pointer';
-  videoBtn.style.fontWeight = 'bold';
-  videoBtn.style.fontSize = '1.05em';
-
-  // Container for either video player or FAQ Q&A
-  const playerContainer = document.createElement('div');
-
-  videoBtn.onclick = function () {
-    // If this item is already open, close it and restore view
-    if (openedIndex === idx) {
-      playerContainer.innerHTML = "";
-      openedIndex = null;
-      // Show all items
-      videoItems.forEach(item => {
-        item.style.display = '';
-      });
-      return;
-    }
-    // Close any other open item and hide its content
-    if (openedIndex !== null) {
-      videoItems[openedIndex].querySelector('div').innerHTML = "";
-    }
-    playerContainer.innerHTML = ""; // Clear previous
-
-    if (vid.url) {
-      // Pronunciation video logic
-      const videoTitleElem = document.createElement('div');
-      videoTitleElem.textContent = vid.title;
-      videoTitleElem.className = 'current-video-title';
-      videoTitleElem.style.fontWeight = 'bold';
-      videoTitleElem.style.fontSize = '1.1rem';
-      videoTitleElem.style.margin = '14px 0 6px 0';
-      playerContainer.appendChild(videoTitleElem);
-
-      const iframe = document.createElement('iframe');
-      iframe.className = 'video-player';
-      iframe.src = vid.url;
-      iframe.width = "100%";
-      iframe.height = "500";
-      iframe.allow = "autoplay";
-      iframe.setAttribute('allowfullscreen', '');
-      iframe.style.borderRadius = "7px";
-      iframe.style.boxShadow = "0 2px 12px #0001";
-      iframe.style.display = "block";
-      iframe.style.margin = "0 auto";
-      playerContainer.appendChild(iframe);
-
-        } else if (vid.slides && Array.isArray(vid.slides)) {
-      // FAQ Slideshow logic
-      let idxSlide = 0;
-
-      // Create slide container
-      const slideDiv = document.createElement('div');
-      slideDiv.innerHTML = getFaqSlideHtml(vid.slides[idxSlide]);
-      playerContainer.appendChild(slideDiv);
-
-      // Controls
-      const controls = document.createElement('div');
-      controls.style.display = "flex";
-      controls.style.justifyContent = "center";
-      controls.style.alignItems = "center";
-      controls.style.marginTop = "10px";
-
-      const prevBtn = document.createElement('button');
-      prevBtn.textContent = "◀";
-      prevBtn.disabled = true;
-      const nextBtn = document.createElement('button');
-      nextBtn.textContent = "▶";
-      nextBtn.disabled = vid.slides.length <= 1;
-      const indicator = document.createElement('span');
-      indicator.textContent = `${idxSlide+1}/${vid.slides.length}`;
-      indicator.style.margin = "0 12px";
-
-      controls.appendChild(prevBtn);
-      controls.appendChild(indicator);
-      controls.appendChild(nextBtn);
-      playerContainer.appendChild(controls);
-
-      prevBtn.onclick = () => {
-        if (idxSlide > 0) {
-          idxSlide--;
-          slideDiv.innerHTML = getFaqSlideHtml(vid.slides[idxSlide]);
-          indicator.textContent = `${idxSlide+1}/${vid.slides.length}`;
-          prevBtn.disabled = idxSlide === 0;
-          nextBtn.disabled = idxSlide === vid.slides.length-1;
-        }
-      };
-      nextBtn.onclick = () => {
-        if (idxSlide < vid.slides.length-1) {
-          idxSlide++;
-          slideDiv.innerHTML = getFaqSlideHtml(vid.slides[idxSlide]);
-          indicator.textContent = `${idxSlide+1}/${vid.slides.length}`;
-          prevBtn.disabled = idxSlide === 0;
-          nextBtn.disabled = idxSlide === vid.slides.length-1;
-        }
-      };
+    // optional group description
+    const descHtml = sub.description || sub.groupDescription || '';
+    if (descHtml) {
+      const descEl = document.createElement('div');
+      descEl.className = 'video-group-desc';
+      descEl.style.marginBottom = '10px';
+      descEl.innerHTML = descHtml;
+      panel.appendChild(descEl);
     }
 
-    openedIndex = idx;
+    // Build FAQ topics (supports sub.topics or sub.videos)
+    const topics = items;
+    (topics || []).forEach((topic, tIdx) => {
+      const topicWrap = document.createElement('div');
+      topicWrap.style.marginBottom = '14px';
 
-    // Hide all other items except the opened one
-    videoItems.forEach((item, i) => {
-      item.style.display = (i === idx) ? '' : 'none';
-    });
+      // Topic title
+      const tTitle = document.createElement('div');
+      tTitle.textContent = topic.title || `Topic ${tIdx + 1}`;
+      tTitle.style.fontWeight = '700';
+      tTitle.style.color = '#2563eb';
+      tTitle.style.marginBottom = '8px';
+      topicWrap.appendChild(tTitle);
 
-    // Optionally, scroll so the item is visible
-    setTimeout(() => {
-      videoItem.scrollIntoView({ behavior: "smooth", block: "start" });
-    }, 0);
-  };
+      // Questions list (buttons using existing .subtopic-btn styles)
+      const qList = document.createElement('div');
+      qList.style.display = 'flex';
+      qList.style.flexDirection = 'column';
+      qList.style.gap = '8px';
 
-  videoItem.appendChild(videoBtn);
-  videoItem.appendChild(playerContainer);
-  videoItems.push(videoItem);
-  videoList.appendChild(videoItem);
+      (topic.slides || []).forEach((slide, sIdx) => {
+        // create wrapper that will hold the question button and the answer
+const faqItem = document.createElement('div');
+faqItem.className = 'faq-item';
+faqItem.style.marginBottom = '8px';
+
+// create the question button
+const qBtn = document.createElement('button');
+qBtn.type = 'button';
+qBtn.className = 'subtopic-btn';
+qBtn.textContent = slide.question || `Question ${sIdx + 1}`;
+qBtn.style.textAlign = 'left';
+qBtn.style.width = '100%';
+qBtn.setAttribute('aria-expanded', 'false');
+
+// append the button into the wrapper and the wrapper into the list
+faqItem.appendChild(qBtn);
+qList.appendChild(faqItem);
+
+// click handler: ensure only one open per topic, toggle this item
+qBtn.addEventListener('click', (ev) => {
+  ev.stopPropagation();
+
+  // Close any other open item inside the same topic (only one open at a time)
+  const prevOpen = modalSubtopics.querySelector('.faq-item.faq-open');
+  if (prevOpen && prevOpen !== faqItem) {
+    const prevAns = prevOpen.querySelector('.faq-answer');
+    if (prevAns) prevAns.remove();
+    const prevBtn = prevOpen.querySelector('.subtopic-btn');
+    if (prevBtn) {
+      prevBtn.classList.remove('faq-active');
+      prevBtn.setAttribute('aria-expanded', 'false');
+    }
+    prevOpen.classList.remove('faq-open');
+  }
+
+  // Toggle this item
+  const existingAnswer = faqItem.querySelector('.faq-answer');
+  if (existingAnswer) {
+    // close it
+    existingAnswer.remove();
+    faqItem.classList.remove('faq-open');
+    qBtn.classList.remove('faq-active');
+    qBtn.setAttribute('aria-expanded', 'false');
+    return;
+  }
+
+  // create answer element and insert it inside the same wrapper
+  const ans = document.createElement('div');
+  ans.className = 'faq-answer';
+  ans.style.margin = '6px 0 12px 0';
+  ans.innerHTML = `<ul style="margin:0; padding-left:1.05rem;"><li style="margin:6px 0; line-height:1.45; color:#111;">${slide.answer || '<em>No answer provided.</em>'}</li></ul>`;
+
+  faqItem.appendChild(ans);
+
+  // mark wrapper and button as active
+  faqItem.classList.add('faq-open');
+  qBtn.setAttribute('aria-expanded', 'true');
+  qBtn.classList.add('faq-active');
+
+  ans.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 });
 
-// Append the constructed list to your panel or modal area:
-panel.appendChild(videoList);
-  panel.style.display = 'none';
-} else if (sub.type === "lesson-grid") {
+// keyboard activation: open/close with Enter or Space
+qBtn.addEventListener('keydown', (e) => {
+  if (e.key === 'Enter' || e.key === ' ') {
+    e.preventDefault();
+    qBtn.click();
+  }
+});
+      });
+
+      // If no slides/questions, show a placeholder
+      if ((topic.slides || []).length === 0) {
+        const note = document.createElement('div');
+        note.style.color = '#666';
+        note.style.fontSize = '.95rem';
+        note.textContent = 'No Q&A available for this topic.';
+        qList.appendChild(note);
+      }
+
+      topicWrap.appendChild(qList);
+      panel.appendChild(topicWrap);
+    });
+    
+
+    panel.style.display = 'none';
+  } else {
+    // --- This is a real video-group; render thumbnail-styled items and in-place players ---
+    panel = document.createElement('div');
+    panel.className = 'subtopic-panel';
+    panel.innerHTML = `<div class="video-group-desc" style="margin-bottom:10px;">${sub.description || ""}</div>`;
+
+    const videoList = document.createElement('ul');
+    videoList.style.display = 'grid';
+    videoList.style.gridTemplateColumns = 'repeat(auto-fit, minmax(220px, 1fr))';
+    videoList.style.gap = '14px';
+    videoList.style.listStyle = 'none';
+    videoList.style.padding = '0';
+
+    const videoItems = [];
+    let openedIndex = null;
+
+    (sub.videos || []).forEach((vid, idx) => {
+      const videoItem = document.createElement('li');
+      videoItem.style.margin = '7px 0';
+      videoItem.style.position = 'relative';
+
+      // Thumbnail-styled button
+      const videoBtn = document.createElement('button');
+      videoBtn.className = 'video-thumb-btn';
+      videoBtn.style.width = '100%';
+      videoBtn.style.padding = '0';
+      videoBtn.style.borderRadius = '6px';
+      videoBtn.style.border = '1px solid #cdd6f5';
+      videoBtn.style.background = '#fff';
+      videoBtn.style.cursor = 'pointer';
+      videoBtn.style.textAlign = 'left';
+      videoBtn.style.overflow = 'hidden';
+
+      // inner HTML: thumbnail image + play overlay + title
+videoBtn.innerHTML = ''
+  + '<div class="video-thumb-title">' + (vid.title || '') + '</div>'
+  + '<div style="position:relative;width:100%;">'
+  +   '<img src="' + (vid.thumbnail || '') + '" alt="' + ((vid.title || '').replace(/"/g, '&quot;')) + '" style="display:block;width:100%;height:140px;object-fit:cover;">'
+  +   '<div style="position:absolute;left:50%;top:45%;transform:translate(-50%,-50%);font-size:28px;color:rgba(255,255,255,.95);text-shadow:0 2px 6px rgba(0,0,0,.6);pointer-events:none;">▶</div>'
+  + '</div>';
+
+      // Container for in-place player (unused until opened)
+      const playerContainer = document.createElement('div');
+
+      videoBtn.onclick = function (e) {
+        e.stopPropagation();
+
+        const descEl = panel.querySelector('.video-group-desc'); if (descEl) descEl.style.display = 'none';
+
+        // Close previously opened item if different
+        if (openedIndex !== null && openedIndex !== idx && videoItems[openedIndex]) {
+          const prevItem = videoItems[openedIndex];
+          const prevWrapper = prevItem.querySelector('.inplace-player');
+          if (prevWrapper) prevWrapper.remove();
+          const prevBtn = prevItem.querySelector('button');
+          if (prevBtn) prevBtn.style.display = '';
+          openedIndex = null;
+        }
+
+        // Toggle close if already open
+        const existingWrapper = videoItem.querySelector('.inplace-player');
+        if (existingWrapper) {
+          existingWrapper.replaceWith(videoBtn);
+          videoBtn.style.display = '';
+          if (descEl) descEl.style.display = '';
+          openedIndex = null;
+          videoItems.forEach(item => item.style.display = '');
+          return;
+        }
+
+        // Hide other items so this one stands out
+        videoItems.forEach((item, i) => {
+          item.style.display = (i === idx) ? '' : 'none';
+        });
+
+        // Create wrapper that will contain the player and a close button
+        const wrapper = document.createElement('div');
+        wrapper.className = 'inplace-player';
+        wrapper.style.width = '100%';
+        wrapper.style.marginTop = '8px';
+
+        // Optional title above the player
+        const videoTitleElem = document.createElement('div');
+        videoTitleElem.textContent = vid.title || '';
+        videoTitleElem.style.fontWeight = 'bold';
+        videoTitleElem.style.margin = '8px 0';
+        wrapper.appendChild(videoTitleElem);
+
+        // Insert appropriate player based on source/url
+        const url = vid.url || vid.videoUrl || '';
+        if (vid.source === 'youtube' || /youtube\.com|youtu\.be/.test(url)) {
+          const idMatch = url.match(/(?:v=|youtu\.be\/|embed\/)([A-Za-z0-9_-]{6,})/);
+          const id = idMatch ? idMatch[1] : url;
+          const iframe = document.createElement('iframe');
+          iframe.src = `https://www.youtube.com/embed/${id}?autoplay=1&rel=0&modestbranding=1`;
+          iframe.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+          iframe.setAttribute('allowfullscreen', '');
+          iframe.width = '100%';
+          iframe.height = '480';
+          iframe.frameBorder = 0;
+          iframe.style.borderRadius = '7px';
+          iframe.style.boxShadow = '0 2px 12px rgba(0,0,0,0.06)';
+          wrapper.appendChild(iframe);
+        } else if (vid.source === 'drive' || /drive\.google\.com/.test(url)) {
+          const iframe = document.createElement('iframe');
+          iframe.src = url; // should be /preview for drive
+          iframe.width = '100%';
+          iframe.height = '480';
+          iframe.style.borderRadius = '7px';
+          iframe.style.boxShadow = '0 2px 12px rgba(0,0,0,0.06)';
+          iframe.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+          iframe.setAttribute('allowfullscreen', '');
+          wrapper.appendChild(iframe);
+        } else if (vid.source === 'mp4' || /\.mp4($|\?)/.test(url)) {
+          const vidEl = document.createElement('video');
+          vidEl.controls = true;
+          vidEl.src = url;
+          if (vid.thumbnail) vidEl.poster = vid.thumbnail;
+          vidEl.style.width = '100%';
+          vidEl.style.height = '480px';
+          vidEl.style.borderRadius = '7px';
+          vidEl.style.boxShadow = '0 2px 12px rgba(0,0,0,0.06)';
+          wrapper.appendChild(vidEl);
+          vidEl.play().catch(()=>{});
+        } else {
+          // fallback: open in new tab if unknown source
+          window.open(url || vid.link || '#', '_blank', 'noopener');
+          videoItems.forEach(item => item.style.display = '');
+          return;
+        }
+
+        // Close button that restores the thumbnail button back in place
+        const closeRow = document.createElement('div');
+        closeRow.style.display = 'flex';
+        closeRow.style.justifyContent = 'center';
+        closeRow.style.marginTop = '8px';
+        const closeBtn = document.createElement('button');
+        closeBtn.textContent = 'Close';
+        closeBtn.style.padding = '.35rem .6rem';
+        closeBtn.style.borderRadius = '6px';
+        closeBtn.style.border = '1px solid #ccd';
+        closeBtn.style.background = '#fff';
+        closeBtn.style.cursor = 'pointer';
+        closeBtn.onclick = function (ev) {
+          ev.stopPropagation();
+          wrapper.replaceWith(videoBtn);
+          videoBtn.style.display = '';
+          const descEl2 = panel.querySelector('.video-group-desc');
+          if (descEl2) descEl2.style.display = '';
+          openedIndex = null;
+          videoItems.forEach(item => item.style.display = '');
+        };
+        closeRow.appendChild(closeBtn);
+        wrapper.appendChild(closeRow);
+
+        // Replace the thumbnail button with the wrapper (player) in-place
+        videoBtn.replaceWith(wrapper);
+
+        // mark as open
+        openedIndex = idx;
+
+        // scroll into view
+        wrapper.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      };
+
+      videoItem.appendChild(videoBtn);
+      videoItem.appendChild(playerContainer);
+      videoItems.push(videoItem);
+      videoList.appendChild(videoItem);
+    });
+
+        panel.appendChild(videoList);
+    panel.style.display = 'none';
+    }
+  } else if (sub.type === "lesson-grid") {
   panel = document.createElement('div');
   panel.className = 'subtopic-panel';
   panel.style.display = 'none';
@@ -1195,7 +1447,7 @@ panel.appendChild(videoList);
   // Track expanded card
   let expandedIdx = null;
 
-  sub.lessons.forEach((lesson, idx) => {
+  (sub.lessons || []).forEach((lesson, idx) => {
     const card = document.createElement('div');
     card.className = 'lesson-card';
     card.style.border = "1px solid #cdd6f5";
@@ -1227,11 +1479,12 @@ cardBody.style.display = "none";
 cardBody.style.padding = "0 15px 15px 15px";
 
 // If slides property exists, show as slideshow
-if (lesson.slides) {
-  let idx = 0;
+// If slides property exists, show as slideshow
+if (Array.isArray(lesson.slides) && lesson.slides.length) {
+  let slideIndex = 0; // dedicated index for this slideshow
   const slideContent = document.createElement('div');
   slideContent.className = 'lesson-slide-content';
-  slideContent.innerHTML = lesson.slides[0];
+  slideContent.innerHTML = lesson.slides[slideIndex];
 
   // Controls
   const controls = document.createElement('div');
@@ -1239,42 +1492,45 @@ if (lesson.slides) {
   controls.style.alignItems = "center";
   controls.style.justifyContent = "center";
   controls.style.marginTop = "12px";
+
   const prevBtn = document.createElement('button');
   prevBtn.textContent = '◀';
   prevBtn.disabled = true;
+
   const indicator = document.createElement('span');
-  indicator.textContent = `1/${lesson.slides.length}`;
+  indicator.textContent = `${slideIndex + 1}/${lesson.slides.length}`;
   indicator.style.margin = "0 8px";
+
   const nextBtn = document.createElement('button');
   nextBtn.textContent = '▶';
   nextBtn.disabled = lesson.slides.length <= 1;
+
+  function updateSlide() {
+    slideContent.innerHTML = lesson.slides[slideIndex];
+    indicator.textContent = `${slideIndex + 1}/${lesson.slides.length}`;
+    prevBtn.disabled = slideIndex === 0;
+    nextBtn.disabled = slideIndex === lesson.slides.length - 1;
+  }
+
+  prevBtn.onclick = () => {
+    if (slideIndex > 0) {
+      slideIndex--;
+      updateSlide();
+    }
+  };
+  nextBtn.onclick = () => {
+    if (slideIndex < lesson.slides.length - 1) {
+      slideIndex++;
+      updateSlide();
+    }
+  };
 
   controls.appendChild(prevBtn);
   controls.appendChild(indicator);
   controls.appendChild(nextBtn);
 
-  prevBtn.onclick = () => {
-    if (idx > 0) {
-      idx--;
-      slideContent.innerHTML = lesson.slides[idx];
-      indicator.textContent = `${idx + 1}/${lesson.slides.length}`;
-      prevBtn.disabled = idx === 0;
-      nextBtn.disabled = idx === lesson.slides.length - 1;
-    }
-  };
-  nextBtn.onclick = () => {
-    if (idx < lesson.slides.length - 1) {
-      idx++;
-      slideContent.innerHTML = lesson.slides[idx];
-      indicator.textContent = `${idx + 1}/${lesson.slides.length}`;
-      prevBtn.disabled = idx === 0;
-      nextBtn.disabled = idx === lesson.slides.length - 1;
-    }
-  };
-
   cardBody.appendChild(slideContent);
   cardBody.appendChild(controls);
-
 } else {
   // Otherwise, show single text if present
   cardBody.innerHTML = `<div style="margin-bottom:8px;">${lesson.text || ""}</div>`;
@@ -1288,26 +1544,37 @@ if (lesson.videoUrl) {
 }
 
     // Card click logic
-    cardHeader.onclick = function() {
+    // replace the existing cardHeader.onclick = function() { ... } with this
+cardHeader.onclick = function() {
+  const guideRow = panel.querySelector('.hint-guide-row');
+
   if (expandedIdx === idx) {
-    // Collapse this card, show all again
     expandedIdx = null;
     grid.childNodes.forEach((c, i) => {
       c.style.display = '';
-      c.querySelector('button').style.display = '';
-      c.querySelector('div').style.display = "none";
+      const btnChild = c.querySelector('button');
+      if (btnChild) btnChild.style.display = '';
+      const divChild = c.querySelector('div');
+      if (divChild) divChild.style.display = "none";
     });
+    if (guideRow && grid) {
+      grid.appendChild(guideRow);
+      guideRow.style.display = ''; 
+    } else if (guideRow) {
+      guideRow.style.display = '';
+    }
   } else {
+    
     expandedIdx = idx;
-    // Hide all others, show only this
     grid.childNodes.forEach((c, i) => {
       c.style.display = (i === idx) ? '' : 'none';
-      // Hide the button (header) for the expanded card
-      c.querySelector('button').style.display = (i === idx) ? 'none' : '';
-      c.querySelector('div').style.display = (i === idx) ? '' : 'none';
+      const btnChild = c.querySelector('button');
+      if (btnChild) btnChild.style.display = (i === idx) ? 'none' : '';
+      const divChild = c.querySelector('div');
+      if (divChild) divChild.style.display = (i === idx) ? '' : 'none';
     });
     cardBody.style.display = "";
-    // Scroll into view
+    if (guideRow) guideRow.style.display = 'none';
     setTimeout(() => {
       card.scrollIntoView({ behavior: "smooth", block: "start" });
     }, 0);
@@ -1316,12 +1583,64 @@ if (lesson.videoUrl) {
 
     card.appendChild(cardHeader);
     card.appendChild(cardBody);
+    // Diagnostic-safe append (replaces: grid.appendChild(card);)
+try {
+  // Snapshot some info safely
+  const info = {
+    lessonIndex: (typeof idx !== 'undefined') ? idx : null,
+    cardIsNode: !!(typeof card !== 'undefined' && card instanceof Node),
+    cardType: Object.prototype.toString.call(typeof card !== 'undefined' ? card : null),
+    typeofCard: typeof card,
+    cardConstructor: (card && card.constructor && card.constructor.name) || null,
+    gridIsNode: !!(grid instanceof Node),
+    gridTag: grid && grid.tagName,
+    // small safe lesson snapshot (if available)
+    lessonSnapshot: (function(){
+      try { return typeof lesson !== 'undefined' ? JSON.stringify(lesson).slice(0,1000) : null; }
+      catch(e){ return String(lesson); }
+    })()
+  };
+
+  if (!info.cardIsNode) {
+    console.error('APPEND DIAGNOSTIC: card is NOT a Node — skipping append', info);
+    // skip adding this item so UI can still render other items
+  } else {
+    // Good node -> append
     grid.appendChild(card);
+    console.log('APPEND DIAGNOSTIC: appended card at lessonIndex', info.lessonIndex, { gridTag: info.gridTag });
+  }
+} catch (err) {
+  console.error('APPEND DIAGNOSTIC: unexpected error during append attempt', err, {
+    typeofCard: typeof card,
+    card: card,
+    grid: grid,
+    idx: typeof idx !== 'undefined' ? idx : null,
+    lesson: typeof lesson !== 'undefined' ? lesson : null
+  });
+}
   });
 
-  panel.appendChild(grid);
-}
-    // Accordion logic
+    panel.appendChild(grid);
+
+  // Only add the lesson-plan CTA when the sub object provides a guideUrl
+  if (sub.guideUrl) {
+    const guideRow = document.createElement('div');
+    guideRow.style.marginTop = '12px';
+    guideRow.style.display = 'flex';
+    guideRow.style.justifyContent = 'center';
+
+    const guideLink = document.createElement('a');
+    guideLink.href = sub.guideUrl;
+    guideLink.target = '_blank';
+    guideLink.rel = 'noopener';
+    guideLink.className = 'presentation-link view-lesson-btn';
+    guideLink.innerHTML = '<span class="link-icon" aria-hidden>📄</span> View the Lesson Plan Link';
+
+    guideRow.appendChild(guideLink);
+    panel.appendChild(guideRow);
+  }
+
+} 
     btn.addEventListener('click', function() {
   // If this is a lesson-grid and already open, and a card is expanded, restore the grid
   if (
@@ -1373,6 +1692,32 @@ if (lesson.videoUrl) {
       if (sub.type === "slideshow") setupSlideshow(panel, sub.slides);
     }
     li.appendChild(btn);
+
+// REPLACE the existing hint-button insertion with this block
+// Insert this RIGHT BEFORE: li.appendChild(panel);
+if (/hint/i.test(sub.title || '') || /hint/i.test(section.title || '')) {
+  if (!panel.querySelector('.hint-guide-row')) {
+    const guideUrl = 'https://docs.google.com/document/d/1jYj4iZbV1HDhFQ7vBVp7T_CU3bO5xBgCkKdRhak5I4k/edit?tab=t.0';
+    const guideRow = document.createElement('div');
+    guideRow.className = 'hint-guide-row';
+    // keep markup only; visual layout handled in CSS now
+    const guideLink = document.createElement('a');
+    guideLink.href = guideUrl;
+    guideLink.target = '_blank';
+    guideLink.rel = 'noopener noreferrer';
+    guideLink.className = 'presentation-link';
+    guideLink.innerHTML = '<span class="link-icon" aria-hidden>📄</span> Training Hint Guide';
+    guideRow.appendChild(guideLink);
+
+    // Append into the grid if present so it behaves like other grid items
+    const gridEl = panel.querySelector('div[style*="display: grid"], div[style*="grid-template-columns"], .lesson-grid');
+    if (gridEl) {
+      gridEl.appendChild(guideRow);
+    } else {
+      panel.appendChild(guideRow);
+    }
+  }
+}
     li.appendChild(panel);
     ul.appendChild(li);
   });
