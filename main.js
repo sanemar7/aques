@@ -846,7 +846,7 @@ https://docs.google.com/forms/d/e/1FAIpQLScsAiiTV_bdBIEcy7bwd0GZ45-0Kw2tiuiGemmw
   slides: [
     `
     <br>
-    <div><strong class="bold">What is mimic method?</strong></div><br>
+    <div><strong class="bold">What is Mimic method?</strong></div><br>
     <span class="bold">• Mimic Method: Repeat what the student said in a complete and conversational sentence.
     
     <br><br>• This shows you understand them, boosts their confidence, and encourages them to speak more. </span><br><br><br>`,
@@ -860,7 +860,17 @@ https://docs.google.com/forms/d/e/1FAIpQLScsAiiTV_bdBIEcy7bwd0GZ45-0Kw2tiuiGemmw
     <span class="bold">• Repeat the steps. </span><br><br><br>
     `,
 
-    `<br><div><strong class="bold">Sample Mimic Video</strong></div><br><br>
+    `<br><div><strong class="bold">Sample Mimic Video</div>(Beginner student)</strong><br><br>
+     <iframe 
+    src="https://drive.google.com/file/d/1PmVNK6rAcwHo2thiNryVq-CTecl787j_/preview" 
+    width="100%" 
+    height="400" 
+    allowfullscreen
+    allow="autoplay">
+  </iframe><br><br><br>
+   </div>`,
+
+    `<br><div><strong class="bold">Sample Mimic Video</div>(Advance student)</strong><br><br>
      <iframe 
     src="https://drive.google.com/file/d/1urCmPtGgcaBdLR8PWE-Z2QVtYHJOTJ3u/preview" 
     width="100%" 
